@@ -12,7 +12,7 @@ class Home extends React.Component {
 
         <Flexbox style={styles.homePage} flexDirection='row'>
 
-          <Flexbox style={{margin: '35px 10px 35px 10px'}}>
+          <Flexbox style={{margin: '50px 10px 50px 10px'}}>
             <div style={{maxWidth: '400px', backgroundColor: 'rgba(0,0,0,0.7)', padding:'10px'}}>
               <h3>
               Mail Services in New Orleans
@@ -76,8 +76,9 @@ class Home extends React.Component {
 const styles= {
   homePage: {
     backgroundImage: `url(${streetview})`,
-    backgroundPosition: 'center',
     height: 'auto',
+    backgroundSize: 'cover',
+    overflow: 'hidden',
     width: '100vw',
     color: 'white',
     alignItems: 'center', 
