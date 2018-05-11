@@ -17,7 +17,7 @@ class Menubar extends React.Component {
         </div>
 
         <div >
-          <Image src={pplogonotag} size='small' />
+          <Image src={pplogonotag} style={{maxHeight: '30px'}} />
         </div>
 
         <div style={styles.barButton}>

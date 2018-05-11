@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Flexbox from 'flexbox-react'
-import Contact from './Contact'
+import Home from './Home'
 import MenuBar from './MenuBar'
 
 
@@ -17,7 +17,7 @@ class App extends Component {
         <Flexbox style={styles.pageBox} flexGrow={1}>
           <BrowserRouter>
             <Switch>
-              <Route exact path='/' component={Contact} />
+              <Route exact path='/' component={Home} />
             </Switch>
           </BrowserRouter>
         </Flexbox>

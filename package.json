@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/googlemaps": "^3.30.8",
+    "@types/markerclustererplus": "^2.1.33",
+    "ajv": "^6.5.0",
     "flexbox-react": "^4.4.0",
+    "googlemaps": "^1.12.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-google-maps": "^9.4.5",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
+    "recompose": "^0.27.0",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.79.1"
   },
