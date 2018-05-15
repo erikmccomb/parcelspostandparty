@@ -124,7 +124,7 @@ class Home extends React.Component {
                 </tr>
                 <tr>
                   <td colSpan='2'>
-                    <Map/>
+                    <Map isMarkerShown/>
                   </td>
                 </tr>
               </table>
