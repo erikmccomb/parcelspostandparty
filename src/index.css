@@ -13,3 +13,11 @@ body {
   font-family: 'Baskerville';
   src: local('Baskerville-Medium'), url(./Fonts/Baskerville-Medium.ttf) format('truetype');
 }
+
+.toptable td {
+  margin: 10px
+}
+
+.innertable td {
+  margin: 0px
+}

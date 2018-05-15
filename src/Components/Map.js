@@ -18,13 +18,13 @@ const Map = compose(
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBhU9khMmAq1H8l4-bNh2k5OQ0xmr71zVw",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `153px`, width: `200px` }} />,
+    containerElement: <div style={{ height: `300px`, width: `100vw`, maxWidth:'600px'}} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
   withScriptjs,
   withGoogleMap
 )(props => (
-  <GoogleMap defaultZoom={13} defaultCenter={{ lat: 29.920202, lng: -90.111310 }}>
+  <GoogleMap defaultZoom={17} defaultCenter={{ lat: 29.920202, lng: -90.111310 }}>
     {props.isMarkerShown && (
       <Marker position={{ lat: 29.920202, lng: -90.111302 }} />
     )}
