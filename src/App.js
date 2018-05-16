@@ -1,6 +1,6 @@
 import React from 'react'
-import Menubar from './MenuBar'
-import Main from './Main'
+import Menubar from './Components/MenuBar'
+import Main from './Components/Main'
 
 const App = () => (
   <div>
