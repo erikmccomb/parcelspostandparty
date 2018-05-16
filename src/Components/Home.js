@@ -63,72 +63,76 @@ class Home extends React.Component {
                 <tr>
                   <td style={{backgroundColor: 'rgba(0,0,0,0.7)', padding:'5px',}}>
                     <Flexbox alignContent='center' justifyContent='center'>
-                    <table>
-                      <tr>
-                        <td style={{padding:'0px 15px 0px 0px'}}>
-                        Mon.
-                        </td>
-                        <td>
-                        9:00 am - 6:00 pm
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{padding:'0px 15px 0px 0px'}}>
-                        Tues.
-                        </td>
-                        <td>
-                        9:00 am - 6:00 pm
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{padding:'0px 15px 0px 0px'}}>
-                        Wed.
-                        </td>
-                        <td>
-                        9:00 am - 6:00 pm
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{padding:'0px 15px 0px 0px'}}>
-                        Thur.
-                        </td>
-                        <td>
-                        9:00 am - 6:00 pm
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{padding:'0px 15px 0px 0px'}}>
-                        Fri.
-                        </td>
-                        <td>
-                        9:00 am - 6:00 pm
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{padding:'0px 15px 0px 0px'}}>
-                        Sat.
-                        </td>
-                        <td>
-                        9:00 am - 2:00 pm
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{padding:'0px 15px 0px 0px'}}>
-                        Sun.
-                        </td>
-                        <td>
-                        Closed
-                        </td>
-                      </tr>
-                    </table>
+                      
+                      <table>
+                        <tr>
+                          <td style={{padding:'0px 15px 0px 0px'}}>
+                          Mon.
+                          </td>
+                          <td>
+                          9:00 am - 6:00 pm
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{padding:'0px 15px 0px 0px'}}>
+                          Tues.
+                          </td>
+                          <td>
+                          9:00 am - 6:00 pm
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{padding:'0px 15px 0px 0px'}}>
+                          Wed.
+                          </td>
+                          <td>
+                          9:00 am - 6:00 pm
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{padding:'0px 15px 0px 0px'}}>
+                          Thur.
+                          </td>
+                          <td>
+                          9:00 am - 6:00 pm
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{padding:'0px 15px 0px 0px'}}>
+                          Fri.
+                          </td>
+                          <td>
+                          9:00 am - 6:00 pm
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{padding:'0px 15px 0px 0px'}}>
+                          Sat.
+                          </td>
+                          <td>
+                          9:00 am - 2:00 pm
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{padding:'0px 15px 0px 0px'}}>
+                          Sun.
+                          </td>
+                          <td>
+                          Closed
+                          </td>
+                        </tr>
+                      </table>
+
                     </Flexbox>
                   </td>
                 </tr>
+
                 <tr>
                   <td colSpan='2'>
                     <Map isMarkerShown/>
                   </td>
                 </tr>
+
               </table>
           </Flexbox>
       </Flexbox>

@@ -3,29 +3,41 @@ import Flexbox from 'flexbox-react'
 import { Image } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import pplogonotag from '../Images/Logos/pplogonotag.png'
+import { Link } from 'react-router-dom'
 
 class Menubar extends React.Component {
   render() {
     return(
       <Flexbox flexDirection='row' style={styles.barAlign}>
+
         <div style={styles.barButton}>
-          Store
+          <Link to='Store' style={{color: 'black'}} >
+            Store
+          </Link>
         </div>
         
         <div style={styles.barButton}>
-          Shipping
+          <Link to='Shipping' style={{color: 'black'}} >
+            Shipping
+          </Link>
         </div>
 
         <div >
-          <Image src={pplogonotag} style={{maxHeight: '45px'}} />
+          <Link to='/' style={{color: 'black'}} >
+            <Image src={pplogonotag} style={{maxHeight: '45px'}} />
+          </Link>
         </div>
 
         <div style={styles.barButton}>
-          Partners
+          <Link to='Partners' style={{color: 'black'}} >
+            Partners
+          </Link> 
         </div>
 
         <div style={styles.barButton}>
-          Contact
+          <Link to='About' style={{color: 'black'}} >
+            About
+          </Link>
         </div>
         
       </Flexbox>
@@ -39,7 +51,7 @@ const styles = {
     justifyContent: 'center',
     padding: '10px',
     backgroundColor: '#FFFFFF',
-    color: '#09A7E7',
+    color: '#000000',
     borderBottom: '1px solid #09A7E7',
   },
   barButton: {
@@ -49,6 +61,7 @@ const styles = {
     paddingRight: '2vw',
     alignItems: 'center',
     justifyContent: 'center',
+    color: '#000000',
   },
 }
 
