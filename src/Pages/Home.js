@@ -90,6 +90,7 @@ const styles= {
     height: '100%',
     backgroundImage: `url(${flags})`,
     backgroundSize: 'cover',
+    maxWidth:'100vw',
   },
   mailTable: {
     color: 'white',
