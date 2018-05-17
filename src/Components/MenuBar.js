@@ -9,17 +9,17 @@ class Menubar extends React.Component {
   render() {
     return(
       <Flexbox flexDirection='row' style={styles.barAlign}>
-
+        
         <Flexbox style={styles.barButton}>
           <Link to='Store' style={{color: 'black'}} >
             Store
           </Link>
         </Flexbox>
-        
+
         <Flexbox style={styles.barButton}>
-          <Link to='Shipping' style={{color: 'black'}} >
-            Shipping
-          </Link>
+          <Link to='Partners' style={{color: 'black'}} >
+            Fine Art
+          </Link> 
         </Flexbox>
 
         <Flexbox style={{padding: '0vw 2vw 0vw 2vw'}}>
@@ -29,9 +29,9 @@ class Menubar extends React.Component {
         </Flexbox>
 
         <Flexbox style={styles.barButton}>
-          <Link to='Partners' style={{color: 'black'}} >
-            Partners
-          </Link> 
+          <Link to='Shipping' style={{color: 'black'}} >
+            Shipping
+          </Link>
         </Flexbox>
 
         <Flexbox style={styles.barButton}>
@@ -64,6 +64,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     color: '#000000',
+    width:'auto'
   },
 }
 
