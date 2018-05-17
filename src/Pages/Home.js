@@ -96,7 +96,6 @@ const styles= {
   },
   mailTable: {
     color: 'white',
-    borderSpacing: '10px',
   },
 }
 export default Home
