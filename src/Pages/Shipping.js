@@ -12,7 +12,7 @@
 class Shipping extends React.Component {
   render() {
     return(
-      <Flexbox flexGrow={1} flexDirection='column' style={{width: '100vw', height: '100%', backgroundColor:'black'}} alignItems='center' >
+      <Flexbox flexGrow={1} flexDirection='column' style={{width: '100vw', height: '100%', backgroundColor:'White'}} alignItems='center' >
       
       
       {/* Shipping Branding */}
