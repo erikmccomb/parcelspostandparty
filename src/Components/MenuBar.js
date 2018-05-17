@@ -47,6 +47,7 @@ class Menubar extends React.Component {
 
 const styles = {
   barAlign: {
+    width: '100vw',
     alignItems: 'center', 
     justifyContent: 'center',
     padding: '10px',
