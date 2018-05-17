@@ -15,67 +15,69 @@ class Home extends React.Component {
     return(
       <Flexbox style={styles.homeStyle}>
         <table className="tdclass" style={styles.mailTable}>
-          <tr>
-            <td className='tdclass' rowSpan='3'>
+          <div style={{maxWidth:'630px',}}>
+            <tr>
+              <td className='tdclass' rowSpan='3'>
 
-              <h3>
-                Mail Services in New Orleans
-              </h3>
+                <h3>
+                  Mail Services in New Orleans
+                </h3>
 
-              <p>Parcels and Post is your local go-to shipping related 
-              service provider. We are located Uptown on Magazine St. 
-              in New Orleans, LA.</p>
+                <p>Parcels and Post is your local go-to shipping related 
+                service provider. We are located Uptown on Magazine St. 
+                in New Orleans, LA.</p>
 
-              <p>We provide the very best customer experience by making 
-              it easy to get your items packed to their destination on 
-              time and have them arrive in perfect condition.</p>
+                <p>We provide the very best customer experience by making 
+                it easy to get your items packed to their destination on 
+                time and have them arrive in perfect condition.</p>
 
-              <p>Doing business with Parcels and Post is easy. We are 
-              proud to be an integral part of the community serving our 
-              friends and neighbors. Come in for a relaxing shipping 
-              experience – our customers love us!</p>
+                <p>Doing business with Parcels and Post is easy. We are 
+                proud to be an integral part of the community serving our 
+                friends and neighbors. Come in for a relaxing shipping 
+                experience – our customers love us!</p>
 
-            </td>
-            <td className='tdclass' style={{width: '180px'}}>
-              <Flexbox flexDirection='row' alignItems='center'>
-                <Flexbox>
-                  <Icon name='map pin' size='large'/>
-                </Flexbox>
-                <Flexbox flexDirection='column'>
+              </td>
+              <td className='tdclass' style={{width: '180px'}}>
+                <Flexbox flexDirection='row' alignItems='center'>
                   <Flexbox>
-                    5208 Magazine St.    
+                    <Icon name='map pin' size='large'/>
                   </Flexbox>
-                  <Flexbox>
-                    New Orleans, LA 70115
+                  <Flexbox flexDirection='column'>
+                    <Flexbox>
+                      5208 Magazine St.    
+                    </Flexbox>
+                    <Flexbox>
+                      New Orleans, LA 70115
+                    </Flexbox>
                   </Flexbox>
                 </Flexbox>
-              </Flexbox>
-            </td>
-          </tr>
-          <tr>
-            <td className='tdclass' style={{width: '180px'}}>
-              <Flexbox flexDirection='row' alignItems='center'>
-                <Flexbox style={{width: '50px', }}>
-                  <Icon name='phone' size='large'/>
+              </td>
+            </tr>
+            <tr>
+              <td className='tdclass' style={{width: '180px'}}>
+                <Flexbox flexDirection='row' alignItems='center'>
+                  <Flexbox style={{width: '50px', }}>
+                    <Icon name='phone' size='large'/>
+                  </Flexbox>
+                  <Flexbox style={{textAlign:'center', width: '130px'}}>
+                    (504) 891-8402
+                  </Flexbox>
                 </Flexbox>
-                <Flexbox style={{textAlign:'center', width: '130px'}}>
-                  (504) 891-8402
-                </Flexbox>
-              </Flexbox>
-            </td>
-          </tr>
-          <tr>
-            <td className='tdclass' style={{width: '180px'}}>
-              <Schedule/>
-            </td>
-          </tr>
+              </td>
+            </tr>
+            <tr>
+              <td className='tdclass' style={{width: '180px'}}>
+                <Schedule/>
+              </td>
+            </tr>
 
-          <tr>
-            <td colSpan='2'>
-              <Map isMarkerShown/>
-            </td>
-          </tr>
+            <tr>
+              <td colSpan='2'>
+                <Map isMarkerShown/>
+              </td>
+            </tr>
 
+          </div>
         </table>
       </Flexbox>
     )
@@ -93,7 +95,6 @@ const styles= {
   },
   mailTable: {
     color: 'white',
-    maxWidth:'630px',
     borderSpacing: '10px',
     border: '0px',
     alignItems: 'center',
