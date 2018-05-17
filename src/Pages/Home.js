@@ -90,7 +90,6 @@ const styles= {
     height: '100%',
     backgroundImage: `url(${flags})`,
     backgroundSize: 'cover',
-    maxWidth:'100vw',
   },
   mailTable: {
     color: 'white',
@@ -99,6 +98,7 @@ const styles= {
     border: '0px',
     alignItems: 'center',
     alignSelf: 'center',
+    maxWidth:'100vw',
   },
 }
 export default Home
