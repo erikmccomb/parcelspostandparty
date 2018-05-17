@@ -7,7 +7,7 @@ class Schedule extends React.Component {
       <Flexbox alignContent='center' justifyContent='center'>
         <table>
           <tr>
-            <td style={{padding:'0px 15px 0px 0px'}}>
+            <td style={{padding:'0px 10px 0px 0px'}}>
             Mon.
             </td>
             <td>
@@ -15,7 +15,7 @@ class Schedule extends React.Component {
             </td>
           </tr>
           <tr>
-            <td style={{padding:'0px 15px 0px 0px'}}>
+            <td style={{padding:'0px 10px 0px 0px'}}>
             Tues.
             </td>
             <td>
@@ -23,7 +23,7 @@ class Schedule extends React.Component {
             </td>
           </tr>
           <tr>
-            <td style={{padding:'0px 15px 0px 0px'}}>
+            <td style={{padding:'0px 10px 0px 0px'}}>
             Wed.
             </td>
             <td>
@@ -31,7 +31,7 @@ class Schedule extends React.Component {
             </td>
           </tr>
           <tr>
-            <td style={{padding:'0px 15px 0px 0px'}}>
+            <td style={{padding:'0px 10px 0px 0px'}}>
             Thur.
             </td>
             <td>
@@ -39,7 +39,7 @@ class Schedule extends React.Component {
             </td>
           </tr>
           <tr>
-            <td style={{padding:'0px 15px 0px 0px'}}>
+            <td style={{padding:'0px 10px 0px 0px'}}>
             Fri.
             </td>
             <td>
@@ -47,7 +47,7 @@ class Schedule extends React.Component {
             </td>
           </tr>
           <tr>
-            <td style={{padding:'0px 15px 0px 0px'}}>
+            <td style={{padding:'0px 10px 0px 0px'}}>
             Sat.
             </td>
             <td>
@@ -55,7 +55,7 @@ class Schedule extends React.Component {
             </td>
           </tr>
           <tr>
-            <td style={{padding:'0px 15px 0px 0px'}}>
+            <td style={{padding:'0px 10px 0px 0px'}}>
             Sun.
             </td>
             <td style={{textAlign:'center'}}>

@@ -37,7 +37,7 @@ class Home extends React.Component {
               experience – our customers love us!</p>
 
             </td>
-            <td className='tdclass' style={{width: '180px'}}>
+            <td className='tdclass' style={{width: '170px'}}>
               <Flexbox flexDirection='row' alignItems='center'>
                 <Flexbox>
                   <Icon name='map pin' size='large'/>
@@ -56,7 +56,7 @@ class Home extends React.Component {
           <tr>
             <td className='tdclass' style={{width: '170px'}}>
               <Flexbox flexDirection='row' alignItems='center'>
-                <Flexbox style={{width: '50px', }}>
+                <Flexbox style={{width: '40px', }}>
                   <Icon name='phone' size='large'/>
                 </Flexbox>
                 <Flexbox style={{textAlign:'center', width: '130px'}}>
@@ -66,7 +66,7 @@ class Home extends React.Component {
             </td>
           </tr>
           <tr>
-            <td className='tdclass' style={{width: '180px'}}>
+            <td className='tdclass' style={{width: '170px'}}>
               <Schedule/>
             </td>
           </tr>
