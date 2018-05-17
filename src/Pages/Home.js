@@ -77,7 +77,7 @@ class Home extends React.Component {
           </Flexbox>
         </Flexbox>
         
-        <Flexbox style={styles.cell}>
+        <Flexbox>
           <Map isMarkerShown/>
         </Flexbox>
 

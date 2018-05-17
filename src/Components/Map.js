@@ -17,7 +17,7 @@ const Map = compose(
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBhU9khMmAq1H8l4-bNh2k5OQ0xmr71zVw",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `300px`, width: `100vw`, maxWidth:'576px'}} />,
+    containerElement: <div style={{ height: `300px`, width: '100vw', maxWidth: `590px`,padding: '7px', margin:'5px', backgroundColor:'rgba(0,0,0,0.6)',}} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
   withScriptjs,
