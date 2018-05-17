@@ -1,9 +1,12 @@
-import React from 'react'
-import Flexbox from 'flexbox-react'
-import streetview from '../Images/background/streetview.jpg';
-import { Icon, Table } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css'
-import Map from './Map'
+// React
+  import React from 'react'
+  import Flexbox from 'flexbox-react'
+  import { Icon, Table } from 'semantic-ui-react'
+  import 'semantic-ui-css/semantic.min.css'
+// Components
+  import Map from '../Components/Map'
+// Images
+  import streetview from '../Images/background/streetview.jpg';
 
 class Home extends React.Component {
   render() {

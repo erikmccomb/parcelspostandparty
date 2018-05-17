@@ -1,10 +1,10 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Home from './Home'
-import Store from './Store'
-import Partners from './Partners'
-import Shipping from './Shipping'
-import About from './About'
+import Home from '../Pages/Home'
+import Store from '../Pages/Store'
+import Partners from '../Pages/Partners'
+import Shipping from '../Pages/Shipping'
+import About from '../Pages/About'
 
 const Main = () => (
   <main>

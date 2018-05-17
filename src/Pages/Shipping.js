@@ -3,13 +3,12 @@ import Flexbox from 'flexbox-react'
 import streetview from '../Images/background/streetview.jpg';
 import { Icon, Table } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
-import Map from './Map'
 
-class Partners extends React.Component {
+class Shipping extends React.Component {
   render() {
     return(
       <Flexbox flexDirection='column' style={{width: '100vw'}} alignItems='center' >
-        Partners Component
+        Shipping Component
       </Flexbox>
     )
   }
@@ -25,4 +24,4 @@ const styles= {
     alignItems: 'center',
   },
 }
-export default Partners
+export default Shipping
