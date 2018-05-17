@@ -54,7 +54,7 @@ class Home extends React.Component {
             </td>
           </tr>
           <tr>
-            <td className='tdclass' style={{width: '180px'}}>
+            <td className='tdclass' style={{width: '170px'}}>
               <Flexbox flexDirection='row' alignItems='center'>
                 <Flexbox style={{width: '50px', }}>
                   <Icon name='phone' size='large'/>
