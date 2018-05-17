@@ -1,9 +1,9 @@
 import React from 'react'
-import Flexbox from 'flexbox-react'
+import { Link } from 'react-router-dom'
 import { Image } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
+import Flexbox from 'flexbox-react'
 import pplogonotag from '../Images/Logos/pplogonotag.png'
-import { Link } from 'react-router-dom'
 
 class Menubar extends React.Component {
   render() {

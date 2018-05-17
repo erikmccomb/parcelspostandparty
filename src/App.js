@@ -4,7 +4,7 @@ import Main from './Components/Main'
 import Flexbox from 'flexbox-react'
 
 const App = () => (
-  <Flexbox flexDirection='column'>
+  <Flexbox flexDirection='column' minHeight='100vh'>
     <Flexbox style={{width: '100vw'}}>
       <Menubar />
     </Flexbox>

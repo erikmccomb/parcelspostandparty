@@ -1,5 +1,4 @@
 import React from "react"
-import ReactDOM from "react-dom"
 import { compose, withProps } from "recompose"
 import {
   withScriptjs,
@@ -18,7 +17,7 @@ const Map = compose(
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBhU9khMmAq1H8l4-bNh2k5OQ0xmr71zVw",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `300px`, width: `100vw`, maxWidth:'600px'}} />,
+    containerElement: <div style={{ height: `300px`, width: `100vw`, maxWidth:'610px'}} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
   withScriptjs,
