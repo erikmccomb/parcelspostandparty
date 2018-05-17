@@ -14,7 +14,7 @@ class Home extends React.Component {
   render() {
     return(
       <Flexbox style={styles.homeStyle}>
-        
+        <Flexbox style={{maxWidth:'630px',}}>
         <table className="tdclass" style={styles.mailTable}>
           <tr>
             <td className='tdclass' rowSpan='3'>
@@ -78,6 +78,7 @@ class Home extends React.Component {
           </tr>
 
         </table>
+        </Flexbox>
       </Flexbox>
     )
   }
@@ -95,7 +96,6 @@ const styles= {
   },
   mailTable: {
     color: 'white',
-    maxWidth:'630px',
     borderSpacing: '10px',
   },
 }
