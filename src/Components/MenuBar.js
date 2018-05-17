@@ -10,35 +10,35 @@ class Menubar extends React.Component {
     return(
       <Flexbox flexDirection='row' style={styles.barAlign}>
 
-        <div style={styles.barButton}>
+        <Flexbox style={styles.barButton}>
           <Link to='Store' style={{color: 'black'}} >
             Store
           </Link>
-        </div>
+        </Flexbox>
         
-        <div style={styles.barButton}>
+        <Flexbox style={styles.barButton}>
           <Link to='Shipping' style={{color: 'black'}} >
             Shipping
           </Link>
-        </div>
+        </Flexbox>
 
-        <div style={{padding: '0vw 2vw 0vw 2vw'}}>
+        <Flexbox style={{padding: '0vw 2vw 0vw 2vw'}}>
           <Link to='/' style={{color: 'black'}} >
             <Image src={pplogonotag} style={{maxHeight: '45px'}} />
           </Link>
-        </div>
+        </Flexbox>
 
-        <div style={styles.barButton}>
+        <Flexbox style={styles.barButton}>
           <Link to='Partners' style={{color: 'black'}} >
             Partners
           </Link> 
-        </div>
+        </Flexbox>
 
-        <div style={styles.barButton}>
+        <Flexbox style={styles.barButton}>
           <Link to='About' style={{color: 'black'}} >
             About
           </Link>
-        </div>
+        </Flexbox>
         
       </Flexbox>
     )

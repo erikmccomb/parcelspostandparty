@@ -4,65 +4,70 @@ import Flexbox from 'flexbox-react'
 class Schedule extends React.Component {
   render() {
     return(
-      <Flexbox alignContent='center' justifyContent='center'>
-        <table>
-          <tr>
-            <td style={{padding:'0px 10px 0px 0px'}}>
+      <Flexbox flexDirection='column' >
+        <Flexbox flexDirection='row' justifyContent='space-between'>
+          <Flexbox >
             Mon.
-            </td>
-            <td>
+          </Flexbox>
+          <Flexbox style={{alignSelf:'right'}}>
             9:00 am - 6:00 pm
-            </td>
-          </tr>
-          <tr>
-            <td style={{padding:'0px 10px 0px 0px'}}>
+          </Flexbox>
+        </Flexbox>
+
+        <Flexbox flexDirection='row' justifyContent='space-between'>
+          <Flexbox >
             Tues.
-            </td>
-            <td>
+          </Flexbox>
+          <Flexbox>
             9:00 am - 6:00 pm
-            </td>
-          </tr>
-          <tr>
-            <td style={{padding:'0px 10px 0px 0px'}}>
+          </Flexbox>
+        </Flexbox>
+
+        <Flexbox flexDirection='row' justifyContent='space-between'>
+          <Flexbox >
             Wed.
-            </td>
-            <td>
+          </Flexbox>
+          <Flexbox>
             9:00 am - 6:00 pm
-            </td>
-          </tr>
-          <tr>
-            <td style={{padding:'0px 10px 0px 0px'}}>
+          </Flexbox>
+        </Flexbox>
+
+        <Flexbox flexDirection='row' justifyContent='space-between'>
+          <Flexbox >
             Thur.
-            </td>
-            <td>
+          </Flexbox>
+          <Flexbox>
             9:00 am - 6:00 pm
-            </td>
-          </tr>
-          <tr>
-            <td style={{padding:'0px 10px 0px 0px'}}>
+          </Flexbox>
+        </Flexbox>
+
+        <Flexbox flexDirection='row' justifyContent='space-between'>
+          <Flexbox >
             Fri.
-            </td>
-            <td>
+          </Flexbox>
+          <Flexbox>
             9:00 am - 6:00 pm
-            </td>
-          </tr>
-          <tr>
-            <td style={{padding:'0px 10px 0px 0px'}}>
+          </Flexbox>
+        </Flexbox>
+
+        <Flexbox flexDirection='row' justifyContent='space-between'>
+          <Flexbox >
             Sat.
-            </td>
-            <td>
+          </Flexbox>
+          <Flexbox>
             9:00 am - 2:00 pm
-            </td>
-          </tr>
-          <tr>
-            <td style={{padding:'0px 10px 0px 0px'}}>
+          </Flexbox>
+        </Flexbox>
+
+        <Flexbox flexDirection='row' justifyContent='space-between'>
+          <Flexbox >
             Sun.
-            </td>
-            <td style={{textAlign:'center'}}>
+          </Flexbox>
+          <Flexbox>
             Closed
-            </td>
-          </tr>
-        </table>
+          </Flexbox>
+        </Flexbox>
+
       </Flexbox>
     )
   }

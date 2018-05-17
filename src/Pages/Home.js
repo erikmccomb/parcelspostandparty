@@ -13,72 +13,74 @@
 class Home extends React.Component {
   render() {
     return(
-      <Flexbox style={styles.homeStyle}>
-        <Flexbox style={{maxWidth:'630px',}}>
-        <table className="tdclass" style={styles.mailTable}>
-          <tr>
-            <td className='tdclass' rowSpan='3'>
+      <Flexbox 
+        flexDirection='column' 
+        height='100%' 
+        width='100vw' 
+        alignItems='center' 
+        justifyContent='center'
+        style={styles.homeStyle}
+      >
+        <Flexbox flexDirection='row' maxWidth='600px'>
+          <Flexbox flexDirection='column' style={styles.cell}>
+            <h3>
+              Mail Services in New Orleans
+            </h3>
 
-              <h3>
-                Mail Services in New Orleans
-              </h3>
+            <p>Parcels and Post is your local go-to shipping related 
+            service provider. We are located Uptown on Magazine St. 
+            in New Orleans, LA.</p>
 
-              <p>Parcels and Post is your local go-to shipping related 
-              service provider. We are located Uptown on Magazine St. 
-              in New Orleans, LA.</p>
+            <p>We provide the very best customer experience by making 
+            it easy to get your items packed to their destination on 
+            time and have them arrive in perfect condition.</p>
 
-              <p>We provide the very best customer experience by making 
-              it easy to get your items packed to their destination on 
-              time and have them arrive in perfect condition.</p>
+            <p>Doing business with Parcels and Post is easy. We are 
+            proud to be an integral part of the community serving our 
+            friends and neighbors. Come in for a relaxing shipping 
+            experience – our customers love us!</p>
+          </Flexbox>
 
-              <p>Doing business with Parcels and Post is easy. We are 
-              proud to be an integral part of the community serving our 
-              friends and neighbors. Come in for a relaxing shipping 
-              experience – our customers love us!</p>
-
-            </td>
-            <td className='tdclass' style={{width: '170px'}}>
-              <Flexbox flexDirection='row' alignItems='center'>
+          <Flexbox 
+            flexDirection='column' 
+            minWidth='180px' 
+            justifyContent='space-between'
+          >
+  
+            <Flexbox flexDirection='row' justifyContent='center' style={styles.cell}>
+              <Flexbox>
+                <Icon name='map pin' size='large'/>
+              </Flexbox>
+              <Flexbox flexDirection='column'>
                 <Flexbox>
-                  <Icon name='map pin' size='large'/>
+                  5208 Magazine St.    
                 </Flexbox>
-                <Flexbox flexDirection='column'>
-                  <Flexbox>
-                    5208 Magazine St.    
-                  </Flexbox>
-                  <Flexbox>
-                    New Orleans, LA 70115
-                  </Flexbox>
+                <Flexbox>
+                  New Orleans, LA 70115
                 </Flexbox>
               </Flexbox>
-            </td>
-          </tr>
-          <tr>
-            <td className='tdclass' style={{width: '170px'}}>
-              <Flexbox flexDirection='row' alignItems='center'>
-                <Flexbox style={{width: '40px', }}>
-                  <Icon name='phone' size='large'/>
-                </Flexbox>
-                <Flexbox style={{textAlign:'center', width: '130px'}}>
-                  (504) 891-8402
-                </Flexbox>
+            </Flexbox>
+
+            <Flexbox flexDirection='row' justifyContent='center' style={styles.cell}>
+              <Flexbox>
+                <Icon name='phone' size='large'/>
               </Flexbox>
-            </td>
-          </tr>
-          <tr>
-            <td className='tdclass' style={{width: '170px'}}>
+              <Flexbox>
+                (504) 891-8402
+              </Flexbox>
+            </Flexbox>
+            
+            <Flexbox style={styles.cell}>
               <Schedule/>
-            </td>
-          </tr>
+            </Flexbox>
 
-          <tr>
-            <td colSpan='2'>
-              <Map isMarkerShown/>
-            </td>
-          </tr>
-
-        </table>
+          </Flexbox>
         </Flexbox>
+        
+        <Flexbox style={styles.cell}>
+          <Map isMarkerShown/>
+        </Flexbox>
+
       </Flexbox>
     )
   }
@@ -86,16 +88,14 @@ class Home extends React.Component {
 
 const styles= {
   homeStyle:{
-    width: '100vw', 
-    alignContent: 'center', 
-    justifyContent:'center', 
-    height: '100%',
     backgroundImage: `url(${flags})`,
     backgroundSize: 'cover',
-    maxWidth:'100vw',
   },
-  mailTable: {
-    color: 'white',
+  cell: {
+    padding: '7px', 
+    margin:'5px', 
+    backgroundColor:'rgba(0,0,0,0.6)',
+    color:'white'
   },
 }
 export default Home
