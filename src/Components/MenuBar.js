@@ -22,7 +22,7 @@ class Menubar extends React.Component {
           </Link>
         </div>
 
-        <div >
+        <div style={{padding: '0vw 2vw 0vw 2vw'}}>
           <Link to='/' style={{color: 'black'}} >
             <Image src={pplogonotag} style={{maxHeight: '45px'}} />
           </Link>
