@@ -21,7 +21,7 @@ class Home extends React.Component {
         justifyContent='center'
         style={styles.homeStyle}
       >
-        <Flexbox flexDirection='row' maxWidth='600px'>
+        <Flexbox flexDirection='row' width='600px' maxWidth='100vw'>
           <Flexbox flexDirection='column' style={styles.cell}>
             <h3>
               Mail Services in New Orleans
