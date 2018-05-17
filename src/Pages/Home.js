@@ -16,7 +16,7 @@ class Home extends React.Component {
       <Flexbox style={styles.homeStyle}>
         <table className="tdclass" style={styles.mailTable}>
           <tr>
-            <td className='tdclass' rowSpan='3' style={{ minWidth:'50%' }}>
+            <td className='tdclass' rowSpan='3'>
 
               <h3>
                 Mail Services in New Orleans
