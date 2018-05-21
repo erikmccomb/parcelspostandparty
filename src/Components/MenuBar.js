@@ -18,26 +18,33 @@ class Menubar extends React.Component {
         <Flexbox flexDirection='row' style={styles.barAlign}>
           <Menu pointing secondary>
 
-            <Dropdown text='Services' pointing className='link item' style={{fontFamily: 'Baskerville', alignItems: 'center', justifyContent: 'center', }}>
-              <Dropdown.Menu>
+            <Dropdown name='Services' text='Services' pointing className='link item' style={{fontFamily: 'Baskerville', alignItems: 'center', justifyContent: 'center', }} >
+              <Dropdown.Menu style={{border: '2px solid #09A7E7'}} >
 
-                <Dropdown.Item>
-                  <Link to='Shipping' style={{color: 'black'}} >
-                    Shipping
+                <Dropdown.Item active={activeItem === 'Services'} onClick={this.handleItemClick}>
+                  <Link to='Mailboxes' style={{color: 'black'}} >
+                    Mail & Packages
                   </Link>
                 </Dropdown.Item>
 
-                <Dropdown.Item>
+                <Dropdown.Item active={activeItem === 'Services'} onClick={this.handleItemClick}>
                   <Link to='Shipping' style={{color: 'black'}} >
                     Shipping
                   </Link>
                 </Dropdown.Item>
                 
-                <Dropdown.Item>
+                <Dropdown.Item active={activeItem === 'Services'} onClick={this.handleItemClick}>
                   <Link to='Shipping' style={{color: 'black'}} >
-                    Shipping
+                    HotShot Freight
                   </Link>
                 </Dropdown.Item>
+
+                <Dropdown.Item>
+                  <Link to='Shipping' style={{color: 'black'}} >
+                    Gallery Shipping
+                  </Link>
+                </Dropdown.Item>
+
               </Dropdown.Menu>
             </Dropdown>
 
@@ -79,7 +86,7 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: '#FFFFFF',
     color: '#000000',
-    borderBottom: '1px solid #09A7E7',
+    borderBottom: '2px solid #09A7E7',
   },
   barButton: {
     fontFamily: 'Baskerville', 
