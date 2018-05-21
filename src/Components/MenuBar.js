@@ -1,45 +1,49 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Image } from 'semantic-ui-react'
+import { Image, Menu, Segment} from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import Flexbox from 'flexbox-react'
 import pplogonotag from '../Images/Logos/pplogonotag.png'
 
 class Menubar extends React.Component {
+
+  state = { activeItem: 'home' }
+  
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  
   render() {
+    const { activeItem } = this.state
     return(
-      <Flexbox flexDirection='row' style={styles.barAlign}>
-
-        <Flexbox style={styles.barButton}>
-          <Link to='Faq' style={{color: 'black'}} >
-            FAQ
-          </Link>
+      <Flexbox flexDirection='column'>
+        <Flexbox flexDirection='row' style={styles.barAlign}>
+          <Menu pointing secondary>
+            <Menu.Item name='FAQ' active={activeItem === 'FAQ'} onClick={this.handleItemClick} style={{fontFamily: 'Baskerville', }}>
+              <Link to='Faq' style={{color: 'black'}} >
+                FAQ
+              </Link>
+            </Menu.Item>
+            <Menu.Item name='Services' active={activeItem === 'Services'} onClick={this.handleItemClick} style={{fontFamily: 'Baskerville', }}>
+              <Link to='Services' style={{color: 'black'}} >
+                Services
+              </Link>
+            </Menu.Item>
+            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} style={{fontFamily: 'Baskerville', padding:'6px'}}>
+              <Link to='/' style={{color: 'black'}} >
+                <Image src={pplogonotag} style={{maxHeight: '35px'}} />
+              </Link>
+            </Menu.Item>
+            <Menu.Item name='Partners' active={activeItem === 'Partners'} onClick={this.handleItemClick} style={{fontFamily: 'Baskerville', }}>
+              <Link to='Partners' style={{color: 'black'}} >
+                Partners
+              </Link> 
+            </Menu.Item>
+            <Menu.Item name='About' active={activeItem === 'About'} onClick={this.handleItemClick} style={{fontFamily: 'Baskerville', }}>
+              <Link to='About' style={{color: 'black'}} >
+                About
+              </Link>
+            </Menu.Item>
+          </Menu>
         </Flexbox>
-
-        <Flexbox style={styles.barButton}>
-          <Link to='Services' style={{color: 'black'}} >
-            Services
-          </Link>
-        </Flexbox>
-
-        <Flexbox style={{padding: '0vw 2vw 0vw 2vw'}}>
-          <Link to='/' style={{color: 'black'}} >
-            <Image src={pplogonotag} style={{maxHeight: '45px'}} />
-          </Link>
-        </Flexbox>
-
-        <Flexbox style={styles.barButton}>
-          <Link to='Partners' style={{color: 'black'}} >
-            Partners
-          </Link> 
-        </Flexbox>
-
-        <Flexbox style={styles.barButton}>
-          <Link to='About' style={{color: 'black'}} >
-            About
-          </Link>
-        </Flexbox>
-        
       </Flexbox>
     )
   }
@@ -51,7 +55,6 @@ const styles = {
     maxWidth: '100vw',
     alignItems: 'center', 
     justifyContent: 'center',
-    padding: '10px',
     backgroundColor: '#FFFFFF',
     color: '#000000',
     borderBottom: '1px solid #09A7E7',
