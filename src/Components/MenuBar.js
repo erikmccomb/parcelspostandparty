@@ -21,7 +21,7 @@ class Menubar extends React.Component {
         <Flexbox flexDirection='row' style={styles.barAlign}>
           <Menu pointing secondary>
 
-            <Dropdown name='Services' text='Services' pointing className='link item' style={{fontFamily: 'Baskerville', alignItems: 'center', justifyContent: 'center', }} >
+            <Dropdown name='Services' text='Services' pointing className='link item' style={{fontFamily: 'Baskerville', alignItems: 'center', justifyContent: 'center', padding:'12px 2vw 12px 2vw' }} >
               <Dropdown.Menu style={{border: '2px solid #09A7E7'}} >
 
                 <Dropdown.Item>
@@ -55,7 +55,7 @@ class Menubar extends React.Component {
               name='FAQ' 
               active={activeItem === 'FAQ'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', }}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw' }}
             >
               <Link to='Faq' style={{color: 'black'}} >
                 FAQ
@@ -77,7 +77,7 @@ class Menubar extends React.Component {
               name='About' 
               active={activeItem === 'About'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', }}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw' }}
             >
               <Link to='About' style={{color: 'black'}} >
                 About
@@ -88,7 +88,7 @@ class Menubar extends React.Component {
               name='Partners' 
               active={activeItem === 'Partners'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', }}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw'}}
             >
               <Link to='Partners' style={{color: 'black'}} >
                 Partners
