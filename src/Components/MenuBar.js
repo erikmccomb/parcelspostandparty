@@ -22,7 +22,7 @@ class Menubar extends React.Component {
               <Dropdown.Menu style={{border: '2px solid #09A7E7'}} >
 
                 <Dropdown.Item active={activeItem === 'Services'} onClick={this.handleItemClick}>
-                  <Link to='Mailboxes' style={{color: 'black'}} >
+                  <Link to='MailAndPackages' style={{color: 'black'}} >
                     Mail & Packages
                   </Link>
                 </Dropdown.Item>
@@ -34,13 +34,13 @@ class Menubar extends React.Component {
                 </Dropdown.Item>
                 
                 <Dropdown.Item active={activeItem === 'Services'} onClick={this.handleItemClick}>
-                  <Link to='Shipping' style={{color: 'black'}} >
+                  <Link to='Hotshot' style={{color: 'black'}} >
                     HotShot Freight
                   </Link>
                 </Dropdown.Item>
 
                 <Dropdown.Item>
-                  <Link to='Shipping' style={{color: 'black'}} >
+                  <Link to='Gallery' style={{color: 'black'}} >
                     Gallery Shipping
                   </Link>
                 </Dropdown.Item>

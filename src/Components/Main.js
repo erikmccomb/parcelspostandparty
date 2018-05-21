@@ -4,9 +4,10 @@ import Home from '../Pages/Home'
 import Faq from '../Pages/Faq'
 import Partners from '../Pages/Partners'
 import About from '../Pages/About'
-import Services from '../Pages/Services/Services'
+import Hotshot from '../Pages/Services/Hotshot'
 import Shipping from '../Pages/Services/Shipping'
 import Mailboxes from '../Pages/Services/Mailboxes';
+import Gallery from '../Pages/Services/Gallery';
 
 const Main = () => (
   <main>
@@ -14,11 +15,12 @@ const Main = () => (
       <Route exact path='/' component={Home} />
       <Route path='/FAQ' component={Faq} />
       <Route path='/Partners' component={Partners} />
-      <Route path='/Services' component={Services} />
       <Route path='/About' component={About} />
       
       <Route path='/Shipping' component={Shipping} />
-      <Route path='/Mailboxes' component={Mailboxes} />
+      <Route path='/MailAndPackages' component={Mailboxes} />
+      <Route path='/Hotshot' component={Hotshot} />
+      <Route path='/Gallery' component={Gallery} />
     </Switch>
   </main>
 )
