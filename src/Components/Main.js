@@ -1,18 +1,18 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from '../Pages/Home'
-import Store from '../Pages/Store'
+import Faq from '../Pages/Faq'
 import Partners from '../Pages/Partners'
-import Shipping from '../Pages/Shipping'
+import Services from '../Pages/Services/Services'
 import About from '../Pages/About'
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route path='/Store' component={Store} />
+      <Route path='/FAQ' component={Faq} />
       <Route path='/Partners' component={Partners} />
-      <Route path='/Shipping' component={Shipping} />
+      <Route path='/Services' component={Services} />
       <Route path='/About' component={About} />
     </Switch>
   </main>

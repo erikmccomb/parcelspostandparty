@@ -2,12 +2,12 @@
   import Flexbox from 'flexbox-react'
   import { Image } from 'semantic-ui-react'
 // Images
-  import boxes from '../Images/Background/boxes.jpg';
-  import cardboard2 from '../Images/Background/cardboard2.jpg';
-  import fedex from '../Images/Logos/fedex.png';
-  import usps from '../Images/Logos/usps.png';
-  import ups from '../Images/Logos/ups.png';
-  import dhl from '../Images/Logos/dhl.png';
+  import boxes from '../../Images/Background/boxes.jpg';
+  import cardboard2 from '../../Images/Background/cardboard2.jpg';
+  import fedex from '../../Images/Logos/fedex.png';
+  import usps from '../../Images/Logos/usps.png';
+  import ups from '../../Images/Logos/ups.png';
+  import dhl from '../../Images/Logos/dhl.png';
 
 class Shipping extends React.Component {
   render() {
@@ -26,7 +26,6 @@ class Shipping extends React.Component {
               <Image.Group>
                 <Image src={usps} style={styles.logo}/>
                 <Image src={fedex} style={styles.logo}/>
-                <Image src={ups} style={styles.logo}/>
                 <Image src={dhl} style={styles.logo}/>
               </Image.Group>
             </Flexbox>
@@ -52,15 +51,15 @@ class Shipping extends React.Component {
 
         <Flexbox flexDirection='column' width='100vw' height='300px' justifyContent='center' alignContent='center' alignItems='center' style={{backgroundImage: `url(${boxes})`,
     backgroundSize: 'cover',}}>
-          <Flexbox flexDirection='column' justifyContent='center' style={{color:'white', textAlign:'center',textShadow:'2px 2px #000000', fontSize:'30px', lineHeight:'40px'}}>
+          <Flexbox flexDirection='column' justifyContent='center' style={{color:'white', textAlign:'center',textShadow:'2px 2px #000000', fontSize:'25px', lineHeight:'40px'}}>
                 <div style={{paddingBottom: '20px'}}>
                   Protect your mail with Parcels & Post
                 </div>
                 <div>
-                   We offer private mailboxes, where we're always ready to receive your mail.
+                   We offer private mailboxes - let us receive your mail.
                 </div>
                 <div>
-                  Pick it up whenever it's most convenient for you.
+                  Pick it up when you're ready.
                 </div>
           </Flexbox>
         </Flexbox>

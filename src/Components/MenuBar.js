@@ -11,14 +11,14 @@ class Menubar extends React.Component {
       <Flexbox flexDirection='row' style={styles.barAlign}>
 
         <Flexbox style={styles.barButton}>
-          <Link to='Store' style={{color: 'black'}} >
-            Store
+          <Link to='Faq' style={{color: 'black'}} >
+            FAQ
           </Link>
         </Flexbox>
 
         <Flexbox style={styles.barButton}>
-          <Link to='Shipping' style={{color: 'black'}} >
-            Shipping
+          <Link to='Services' style={{color: 'black'}} >
+            Services
           </Link>
         </Flexbox>
 
