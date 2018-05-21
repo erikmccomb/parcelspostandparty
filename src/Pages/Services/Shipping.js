@@ -5,7 +5,6 @@
   import cardboard2 from '../../Images/Background/cardboard2.jpg';
   import fedex from '../../Images/Logos/fedex.png';
   import usps from '../../Images/Logos/usps.png';
-  import ups from '../../Images/Logos/ups.png';
   import dhl from '../../Images/Logos/dhl.png';
 
 class Shipping extends React.Component {
@@ -13,10 +12,11 @@ class Shipping extends React.Component {
     return(
       <Flexbox flexGrow={1} flexDirection='column' style={{width: '100vw', height: '100%', backgroundColor:'White'}} alignItems='center' >
       
-      
       {/* Shipping Branding */}
         <Flexbox flexDirection='row'  style={styles.cardboard} justifyContent='center' alignContent='center' alignItems='center'>
+
           <Flexbox flexDirection='column' maxWidth='90vw'>
+          
             <Flexbox justifyContent='center' style={{color:'white'}}>
               <h1 style={{fontSize:'40px', textShadow:'1px 1px #000000', paddingBottom:'10px',}}>We'll ship it.</h1>
             </Flexbox>
@@ -31,9 +31,6 @@ class Shipping extends React.Component {
 
           </Flexbox>
         </Flexbox>
-
-        
-
 
       </Flexbox>
     )
