@@ -1,6 +1,6 @@
 import React from 'react'
 import Flexbox from 'flexbox-react'
-import { Button, Card, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 import logo from '../Images/Logos/pplogo.png'
 // Partner Logos
   import AdamHall from '../Images/Partners/AdamHall.png'
@@ -121,7 +121,7 @@ class Partners extends React.Component {
             </Card.Group>
           </Flexbox>
 
-          <Flexbox flexDirection='column' width='600px' paddingTop='20px'>
+          <Flexbox flexDirection='column' width='600px' maxWidth='100vw' paddingTop='20px'>
           <h2>
             Want to ship with us? Here’s how it works:
           </h2>
