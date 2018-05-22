@@ -22,7 +22,7 @@ class Shipping extends React.Component {
             </Flexbox>
 
             <Flexbox>
-              <Image.Group>
+              <Image.Group centered>
                 <Image src={usps} style={styles.logo}/>
                 <Image src={fedex} style={styles.logo}/>
                 <Image src={dhl} style={styles.logo}/>
