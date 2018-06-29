@@ -33,7 +33,7 @@ class App extends Component {
           <Flexbox  flexGrow={1} height='93vh' width='100vw' style={{overflowY:'scroll', overflowX:'hidden'}}>
             <MobileSwitch/>
           </Flexbox>
-          <Flexbox width='100vw' height='7vh'>
+          <Flexbox width='100vw' maxHeight='60px'>
             <MobileMenuBar/>
           </Flexbox>
         </Flexbox>
