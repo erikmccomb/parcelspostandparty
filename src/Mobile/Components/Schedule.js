@@ -4,8 +4,8 @@ import Flexbox from 'flexbox-react'
 class Schedule extends React.Component {
   render() {
     return(
-      <Flexbox flexDirection='column' width='60vw'>
-        <Flexbox flexDirection='row' justifyContent='space-between'>
+      <Flexbox flexDirection='column' width='60%' style={{fontSize:'18px', lineHeight:'25px' }} justifyContent='center'>
+        <Flexbox flexDirection='row' justifyContent='space-between' >
           <Flexbox >
             Mon.
           </Flexbox>

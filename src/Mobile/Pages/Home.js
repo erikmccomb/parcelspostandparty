@@ -21,7 +21,7 @@ class Home extends React.Component {
         justifyContent='center'
         style={styles.homeStyle}
       >
-        <Flexbox flexDirection='column' width='600px' maxWidth='90vw' style={{paddingTop:'10px'}}>
+        <Flexbox flexDirection='column' width='90vw' maxWidth='90vw' style={{paddingTop:'10px'}}>
           <Flexbox style={{backgroundColor:'#ffffff', borderRadius: '60px', paddingTop:'7px', paddingBottom:'3px'}} justifyContent='center'>
             <Image src={pplogo} style={{height: '90px'}} />
           </Flexbox>
@@ -67,11 +67,11 @@ class Home extends React.Component {
                 <Icon name='phone' size='large'/>
               </Flexbox>
               <Flexbox>
-                (504) 891-8402
+                <a href='tel:1-504-891-8402' style={{color:'white'}}>(504) 891-8402</a>
               </Flexbox>
             </Flexbox>
             
-            <Flexbox style={{alignSelf:'center', padding: '7px', margin:'5px', backgroundColor:'rgba(0,0,0,0.6)', color:'white', width: '87vw'}}>
+            <Flexbox style={{alignSelf:'center', padding: '7px', margin:'5px', backgroundColor:'rgba(0,0,0,0.6)', color:'white', width: '90vw'}} justifyContent='center'>
               <Schedule/>
             </Flexbox>
 
