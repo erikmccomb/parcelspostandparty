@@ -1,7 +1,6 @@
 import React from 'react'
 import Flexbox from 'flexbox-react'
-import { Card, Image } from 'semantic-ui-react'
-import logo from '../../Images/Logos/pplogo.png'
+import { Card } from 'semantic-ui-react'
 // Partner Logos
   import AdamHall from '../../Images/Partners/AdamHall.png'
   import AlexBeard from '../../Images/Partners/AlexBeard.png'
@@ -25,8 +24,8 @@ class Partners extends React.Component {
             Your business ships!
           </h1>
         </Flexbox>
-        <Flexbox flexDirection='column' width='900px' maxWidth='100vw' alignItems='center'>
-          <Flexbox flexDirection='column' width='700px' maxWidth='90vw' paddingTop='20px'>
+        <Flexbox flexDirection='column' width='900px' maxWidth='90vw' alignItems='center'>
+          <Flexbox flexDirection='column' width='700px' maxWidth='90vw' padding='20px 0px 20px 0px' style={{textAlign:'justify'}}>
             <p>
             Let Parcels and Post help your store deliver excellent customer service 
             by shipping your client’s purchase home, wherever home may be. Several 
@@ -35,11 +34,10 @@ class Partners extends React.Component {
             French Quarter.
             </p>
           </Flexbox>
-          <Image src={logo} size='medium'/>
 
           <Flexbox>
-            <h2 style={{ fontFamily: 'Baskerville', paddingBottom:'10px', textDecoration:'underline'}}>
-              Our Shipping friends and associates
+            <h2 style={{ fontFamily: 'Baskerville', paddingBottom:'10px', textDecoration:'underline', textAlign:'center'}}>
+              Our Shipping Friends and Associates
             </h2>
           </Flexbox>
           
@@ -121,7 +119,7 @@ class Partners extends React.Component {
             </Card.Group>
           </Flexbox>
 
-          <Flexbox flexDirection='column' width='600px' maxWidth='100vw' paddingTop='20px'>
+          <Flexbox flexDirection='column' width='600px' maxWidth='90vw' padding='20px 0px 60px 0px'>
           <h2>
             Want to ship with us? Here’s how it works:
           </h2>
