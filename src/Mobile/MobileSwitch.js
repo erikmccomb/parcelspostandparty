@@ -2,18 +2,18 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 // MenuBar Pages
-  import Home from '../Pages/Home'
-  import Faq from '../Pages/Faq'
-  import Partners from '../Pages/Partners'
-  import About from '../Pages/About'
+  import Home from './Pages/Home'
+  import Faq from './Pages/Faq'
+  import Partners from './Pages/Partners'
+  import About from './Pages/About'
   
 // DropDown Pages
-  import Hotshot from '../Pages/Services/Hotshot'
-  import Shipping from '../Pages/Services/Shipping'
-  import Mailboxes from '../Pages/Services/Mailboxes'
-  import Gallery from '../Pages/Services/Gallery'
+  import Hotshot from './Pages/Services/Hotshot'
+  import Shipping from './Pages/Services/Shipping'
+  import Mailboxes from './Pages/Services/Mailboxes'
+  import Gallery from './Pages/Services/Gallery'
 
-const Main = () => (
+const MobileSwitch = () => (
   <main>
     <Switch>
 
@@ -32,4 +32,4 @@ const Main = () => (
   </main>
 )
 
-export default Main
+export default MobileSwitch

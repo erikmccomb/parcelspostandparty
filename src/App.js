@@ -3,6 +3,9 @@ import Flexbox from 'flexbox-react'
 import DesktopSwitch from './Desktop/DesktopSwitch'
 import DesktopMenuBar from './Desktop/Components/DesktopMenuBar'
 
+import MobileSwitch from './Mobile/MobileSwitch'
+import MobileMenuBar from './Mobile/Components/MobileMenuBar'
+
 class App extends Component {
   constructor() {
     super();
@@ -26,16 +29,9 @@ class App extends Component {
   
     if (isMobile) {
       return (
-        <div>
-          <Flexbox flexDirection='column' minHeight='100vh'>
-            <Flexbox style={{width: '100vw'}}>
-              Main App
-            </Flexbox>
-            <Flexbox flexGrow={1}>
-              Menu Bar
-            </Flexbox>
-          </Flexbox>
-        </div>
+        <Flexbox flexDirection='column' minHeight='100vh'>
+          <MobileMenuBar/>
+        </Flexbox>
       );
     } else {
       return (
