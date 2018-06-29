@@ -3,18 +3,3 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
-@font-face {
-  font-family: 'Billionaire';
-  src: local('BillionaireMediumGrunge'), url(./Fonts/BillionaireMediumGrunge.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Baskerville';
-  src: local('Baskerville-Medium'), url(./Fonts/Baskerville-Medium.ttf) format('truetype');
-}
-
-td.tdclass {
-  background-Color: rgba(0,0,0,0.7);
-  padding: 7px;
-}

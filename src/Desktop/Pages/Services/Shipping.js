@@ -2,10 +2,10 @@
   import Flexbox from 'flexbox-react'
   import { Image } from 'semantic-ui-react'
 // Images
-  import cardboard2 from '../../Images/Background/cardboard2.jpg';
-  import fedex from '../../Images/Logos/fedex.png';
-  import usps from '../../Images/Logos/usps.png';
-  import dhl from '../../Images/Logos/dhl.png';
+  import cardboard2 from '../../../Images/Background/cardboard2.jpg';
+  import fedex from '../../../Images/Logos/fedex.png';
+  import usps from '../../../Images/Logos/usps.png';
+  import dhl from '../../../Images/Logos/dhl.png';
 
 class Shipping extends React.Component {
   render() {

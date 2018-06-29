@@ -1,6 +1,6 @@
 import React from 'react'
 import Flexbox from 'flexbox-react'
-import boxes from '../../Images/Background/boxes.jpg';
+import boxes from '../../../Images/Background/boxes.jpg';
 
 class Mailboxes extends React.Component {
 render() {

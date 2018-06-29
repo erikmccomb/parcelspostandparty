@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { Image, Menu, Dropdown } from 'semantic-ui-react'
 
 import Flexbox from 'flexbox-react'
-import pplogonotag from '../Images/Logos/pplogonotag.png'
+import pplogonotag from '../../Images/Logos/pplogonotag.png'
 
-class Menubar extends React.Component {
+class DesktopMenuBar extends React.Component {
 
 // Handling state changes for the menubar indicator
   state = { activeItem: 'home' }
@@ -21,11 +21,11 @@ class Menubar extends React.Component {
         <Flexbox flexDirection='row' style={styles.barAlign}>
           <Menu pointing secondary>
 
-            <Dropdown name='Services' text='Services' pointing className='link item' style={{fontFamily: 'Baskerville', alignItems: 'center', justifyContent: 'center', padding:'12px 2vw 12px 2vw' }} >
+            <Dropdown name='Services' text='Services' pointing className='link item' style={{fontFamily: 'Baskerville', alignItems: 'center', justifyContent: 'center', padding:'12px 2vw 12px 2vw', fontSize: '20px', }} >
               <Dropdown.Menu style={{border: '2px solid #09A7E7'}} >
 
                 <Dropdown.Item>
-                  <Link to='MailAndPackages' style={{color: 'black'}} >
+                  <Link to='MailAndPackages' style={{color: 'black', fontSize: '20px',}} >
                     Mail & Packages
                   </Link>
                 </Dropdown.Item>
@@ -55,7 +55,7 @@ class Menubar extends React.Component {
               name='FAQ' 
               active={activeItem === 'FAQ'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw' }}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '20px', }}
             >
               <Link to='Faq' style={{color: 'black'}} >
                 FAQ
@@ -66,7 +66,7 @@ class Menubar extends React.Component {
               name='home' 
               active={activeItem === 'home'} 
               onClick={this.handleItemClick} 
-              tyle={{fontFamily: 'Baskerville', padding:'6px'}}
+              tyle={{fontFamily: 'Baskerville', padding:'6px', fontSize: '20px',}}
             >
               <Link to='/' style={{color: 'black'}} >
                 <Image src={pplogonotag} style={{maxHeight: '35px'}} />
@@ -77,7 +77,7 @@ class Menubar extends React.Component {
               name='About' 
               active={activeItem === 'About'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw' }}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '20px', }}
             >
               <Link to='About' style={{color: 'black'}} >
                 About
@@ -88,7 +88,7 @@ class Menubar extends React.Component {
               name='Partners' 
               active={activeItem === 'Partners'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw'}}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '20px',}}
             >
               <Link to='Partners' style={{color: 'black'}} >
                 Partners
@@ -113,7 +113,7 @@ const styles = {
   },
   barButton: {
     fontFamily: 'Baskerville', 
-    fontSize: '16px',
+    fontSize: '20px',
     paddingLeft: '2vw',
     paddingRight: '2vw',
     alignItems: 'center',
@@ -123,4 +123,4 @@ const styles = {
   },
 }
 
-export default Menubar
+export default DesktopMenuBar

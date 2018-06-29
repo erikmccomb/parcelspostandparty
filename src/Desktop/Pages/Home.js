@@ -3,12 +3,12 @@
   import Flexbox from 'flexbox-react'
   import { Icon } from 'semantic-ui-react'
   import 'semantic-ui-css/semantic.min.css'
-  import '../../src/index.css'
+  import '../../../src/index.css'
 // Components
   import Map from '../Components/Map'
   import Schedule from '../Components/Schedule'
 // Images
-  import flags from '../Images/Background/flags.jpg';
+  import flags from '../../Images/Background/flags.jpg';
 
 class Home extends React.Component {
   render() {
