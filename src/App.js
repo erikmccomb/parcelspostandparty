@@ -30,7 +30,7 @@ class App extends Component {
     if (isMobile) {
       return (
         <Flexbox flexDirection='column' height='100vh'>
-          <Flexbox flexGrow={1} >
+          <Flexbox flexGrow={1}>
             <MobileSwitch/>
           </Flexbox>
           <Flexbox style={{position:'Fixed', left:'0', bottom:'0', right:'0'}}>
