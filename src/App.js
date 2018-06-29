@@ -25,12 +25,17 @@ class App extends Component {
   
   render() {
     const { width } = this.state;
-    const isMobile = width <= 820;
+    const isMobile = width <= 750;
   
     if (isMobile) {
       return (
         <Flexbox flexDirection='column' minHeight='100vh'>
-          <MobileMenuBar/>
+          <Flexbox  flexGrow={1}>
+            <MobileSwitch/>
+          </Flexbox>
+          <Flexbox style={{width: '100vw'}}>
+            <MobileMenuBar/>
+          </Flexbox>
         </Flexbox>
       );
     } else {

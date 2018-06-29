@@ -1,3 +1,4 @@
+import React from 'react'
 import Flexbox from 'flexbox-react'
 
 class Home extends React.Component {
