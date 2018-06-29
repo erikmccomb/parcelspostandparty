@@ -109,7 +109,7 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: '#FFFFFF',
     color: '#000000',
-    borderBottom: '2px solid #09A7E7',
+    borderTop: '2px solid #09A7E7',
   },
   barButton: {
     fontFamily: 'Baskerville', 
