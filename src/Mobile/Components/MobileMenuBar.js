@@ -69,7 +69,7 @@ class MobileMenuBar extends React.Component {
               tyle={{fontFamily: 'Baskerville', padding:'6px', fontSize: '15px',}}
             >
               <Link to='/' style={{color: 'black'}} >
-                <Image src={pplogonotag} style={{maxHeight: '35px'}} />
+                <Image src={pplogonotag} style={{height: '25px'}} />
               </Link>
             </Menu.Item>
 

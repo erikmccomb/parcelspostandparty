@@ -5,7 +5,9 @@ class Home extends React.Component {
   render() {
     return(
       <Flexbox flexDirection='column' style={{width: '100vw'}} alignItems='center' >
-        Home Component
+        <Flexbox>
+          Home Component
+        </Flexbox>
       </Flexbox>
     )
   }
