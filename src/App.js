@@ -30,10 +30,10 @@ class App extends Component {
     if (isMobile) {
       return (
         <Flexbox flexDirection='column' minHeight='100vh'>
-          <Flexbox  flexGrow={1} height='93vh' width='100vw' style={{overflowY:'scroll', overflowX:'hidden'}}>
+          <Flexbox  flexGrow={1} height='90vh' width='100vw' style={{overflowY:'scroll', overflowX:'hidden'}}>
             <MobileSwitch/>
           </Flexbox>
-          <Flexbox width='100vw' maxHeight='60px'>
+          <Flexbox width='100vw' minHeight='60px'>
             <MobileMenuBar/>
           </Flexbox>
         </Flexbox>
