@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Image, Menu, Dropdown } from 'semantic-ui-react'
+import { Image, Menu } from 'semantic-ui-react'
 
 import Flexbox from 'flexbox-react'
 import pplogonotag from '../../Images/Logos/pplogonotag.png'
@@ -17,86 +17,65 @@ class MobileMenuBar extends React.Component {
     const { activeItem } = this.state
 
     return(
-      <Flexbox flexDirection='column'>
-        <Flexbox flexDirection='row' style={styles.barAlign}>
-          <Menu pointing secondary>
+      <Flexbox flexDirection='row' style={styles.barAlign}>
+        <Menu pointing secondary>
 
-            <Dropdown name='Services' text='Services' pointing className='link item' style={{fontFamily: 'Baskerville', alignItems: 'center', justifyContent: 'center', padding:'12px 2vw 12px 2vw', fontSize: '15px',}} >
-              <Dropdown.Menu style={{border: '2px solid #09A7E7'}} >
+          <Menu.Item 
+            name='Services' 
+            active={activeItem === 'Services'} 
+            onClick={this.handleItemClick} 
+            style={styles.barButton}
+          >
+            <Link to='Services' style={{color: 'black'}} >
+            Services
+            </Link>
+          </Menu.Item>
 
-                <Dropdown.Item>
-                  <Link to='MailAndPackages' style={{color: 'black', fontSize: '15px',}} >
-                    Mail & Packages
-                  </Link>
-                </Dropdown.Item>
+          <Menu.Item 
+            name='FAQ' 
+            active={activeItem === 'FAQ'} 
+            onClick={this.handleItemClick} 
+            style={styles.barButton}
+          >
+            <Link to='Faq' style={{color: 'black'}} >
+              FAQ
+            </Link>
+          </Menu.Item>
 
-                <Dropdown.Item>
-                  <Link to='Shipping' style={{color: 'black'}} >
-                    Shipping
-                  </Link>
-                </Dropdown.Item>
-                
-                <Dropdown.Item>
-                  <Link to='Hotshot' style={{color: 'black'}} >
-                    HotShot Freight
-                  </Link>
-                </Dropdown.Item>
+          <Menu.Item 
+            name='home' 
+            active={activeItem === 'home'} 
+            onClick={this.handleItemClick} 
+            style={styles.barButton}
+          >
+            <Link to='/' style={{color: 'black', padding:'0px'}} >
+              <Image src={pplogonotag} />
+            </Link>
+          </Menu.Item>
 
-                <Dropdown.Item>
-                  <Link to='Gallery' style={{color: 'black'}} >
-                    Gallery Shipping
-                  </Link>
-                </Dropdown.Item>
+          <Menu.Item 
+            name='About' 
+            active={activeItem === 'About'} 
+            onClick={this.handleItemClick} 
+            style={styles.barButton}
+          >
+            <Link to='About' style={{color: 'black'}} >
+              About
+            </Link>
+          </Menu.Item>
 
-              </Dropdown.Menu>
-            </Dropdown>
+          <Menu.Item 
+            name='Partners' 
+            active={activeItem === 'Partners'} 
+            onClick={this.handleItemClick} 
+            style={styles.barButton}
+          >
+            <Link to='Partners' style={{color: 'black'}} >
+              Partners
+            </Link> 
+          </Menu.Item>
 
-            <Menu.Item 
-              name='FAQ' 
-              active={activeItem === 'FAQ'} 
-              onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '15px', }}
-            >
-              <Link to='Faq' style={{color: 'black'}} >
-                FAQ
-              </Link>
-            </Menu.Item>
-
-            <Menu.Item 
-              name='home' 
-              active={activeItem === 'home'} 
-              onClick={this.handleItemClick} 
-              tyle={{fontFamily: 'Baskerville', padding:'6px', fontSize: '15px',}}
-            >
-              <Link to='/' style={{color: 'black'}} >
-                <Image src={pplogonotag} style={{height: '25px'}} />
-              </Link>
-            </Menu.Item>
-
-            <Menu.Item 
-              name='About' 
-              active={activeItem === 'About'} 
-              onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '15px', }}
-            >
-              <Link to='About' style={{color: 'black'}} >
-                About
-              </Link>
-            </Menu.Item>
-
-            <Menu.Item 
-              name='Partners' 
-              active={activeItem === 'Partners'} 
-              onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '15px',}}
-            >
-              <Link to='Partners' style={{color: 'black'}} >
-                Partners
-              </Link> 
-            </Menu.Item>
-
-          </Menu>
-        </Flexbox>
+        </Menu>
       </Flexbox>
     )
   }
@@ -113,13 +92,12 @@ const styles = {
   },
   barButton: {
     fontFamily: 'Baskerville', 
-    fontSize: '20px',
-    paddingLeft: '2vw',
-    paddingRight: '2vw',
+    padding:'10px',
+    fontSize: '16px',
     alignItems: 'center',
     justifyContent: 'center',
     color: '#000000',
-    width:'auto'
+    width:'20%'
   },
 }
 

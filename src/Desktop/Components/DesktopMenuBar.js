@@ -21,41 +21,22 @@ class DesktopMenuBar extends React.Component {
         <Flexbox flexDirection='row' style={styles.barAlign}>
           <Menu pointing secondary>
 
-            <Dropdown name='Services' text='Services' pointing className='link item' style={{fontFamily: 'Baskerville', alignItems: 'center', justifyContent: 'center', padding:'12px 2vw 12px 2vw', fontSize: '20px', }} >
-              <Dropdown.Menu style={{border: '2px solid #09A7E7'}} >
-
-                <Dropdown.Item>
-                  <Link to='MailAndPackages' style={{color: 'black', fontSize: '20px',}} >
-                    Mail & Packages
-                  </Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item>
-                  <Link to='Shipping' style={{color: 'black'}} >
-                    Shipping
-                  </Link>
-                </Dropdown.Item>
-                
-                <Dropdown.Item>
-                  <Link to='Hotshot' style={{color: 'black'}} >
-                    HotShot Freight
-                  </Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item>
-                  <Link to='Gallery' style={{color: 'black'}} >
-                    Gallery Shipping
-                  </Link>
-                </Dropdown.Item>
-
-              </Dropdown.Menu>
-            </Dropdown>
+            <Menu.Item 
+              name='Services' 
+              active={activeItem === 'Services'} 
+              onClick={this.handleItemClick} 
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '15px', }}
+            >
+              <Link to='Faq' style={{color: 'black'}} >
+                Services
+              </Link>
+            </Menu.Item>
 
             <Menu.Item 
               name='FAQ' 
               active={activeItem === 'FAQ'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '20px', }}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '15px', }}
             >
               <Link to='Faq' style={{color: 'black'}} >
                 FAQ
@@ -66,10 +47,10 @@ class DesktopMenuBar extends React.Component {
               name='home' 
               active={activeItem === 'home'} 
               onClick={this.handleItemClick} 
-              tyle={{fontFamily: 'Baskerville', padding:'6px', fontSize: '20px',}}
+              tyle={{fontFamily: 'Baskerville', padding:'6px', fontSize: '15px',}}
             >
               <Link to='/' style={{color: 'black'}} >
-                <Image src={pplogonotag} style={{maxHeight: '35px'}} />
+                <Image src={pplogonotag} style={{height: '25px'}} />
               </Link>
             </Menu.Item>
 
@@ -77,7 +58,7 @@ class DesktopMenuBar extends React.Component {
               name='About' 
               active={activeItem === 'About'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '20px', }}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '15px', }}
             >
               <Link to='About' style={{color: 'black'}} >
                 About
@@ -88,7 +69,7 @@ class DesktopMenuBar extends React.Component {
               name='Partners' 
               active={activeItem === 'Partners'} 
               onClick={this.handleItemClick} 
-              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '20px',}}
+              style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '15px',}}
             >
               <Link to='Partners' style={{color: 'black'}} >
                 Partners

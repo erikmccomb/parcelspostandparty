@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Flexbox from 'flexbox-react'
 import DesktopSwitch from './Desktop/DesktopSwitch'
 import DesktopMenuBar from './Desktop/Components/DesktopMenuBar'
-
 import MobileSwitch from './Mobile/MobileSwitch'
 import MobileMenuBar from './Mobile/Components/MobileMenuBar'
 

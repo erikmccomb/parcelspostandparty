@@ -8,7 +8,7 @@
   import Map from '../Components/Map'
   import Schedule from '../Components/Schedule'
 // Images
-  import flags from '../../Images/Background/flags.jpg';
+  import store_1 from '../../Images/Background/store_1.jpg';
 
 class Home extends React.Component {
   render() {
@@ -23,8 +23,8 @@ class Home extends React.Component {
       >
         <Flexbox flexDirection='row' width='600px' maxWidth='100vw'>
           <Flexbox flexDirection='column' style={styles.cell}>
-            <h3>
-              Mail Services in New Orleans
+            <h3 style={{textAlign:'center'}}>
+            From Stamp To Crate - We Love Your Package!
             </h3>
 
             <p>Parcels and Post is your local go-to shipping related 
@@ -88,7 +88,7 @@ class Home extends React.Component {
 
 const styles= {
   homeStyle:{
-    backgroundImage: `url(${flags})`,
+    backgroundImage: `url(${store_1})`,
     backgroundSize: 'cover',
   },
   cell: {
