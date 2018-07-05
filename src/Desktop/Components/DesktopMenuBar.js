@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Image, Menu, Dropdown } from 'semantic-ui-react'
+import { Image, Menu } from 'semantic-ui-react'
 
 import Flexbox from 'flexbox-react'
 import pplogonotag from '../../Images/Logos/pplogonotag.png'
