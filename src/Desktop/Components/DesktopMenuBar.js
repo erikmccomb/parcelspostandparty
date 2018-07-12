@@ -27,7 +27,7 @@ class DesktopMenuBar extends React.Component {
               onClick={this.handleItemClick} 
               style={{fontFamily: 'Baskerville', padding:'12px 2vw 12px 2vw', fontSize: '15px', }}
             >
-              <Link to='Faq' style={{color: 'black'}} >
+              <Link to='Services' style={{color: 'black'}} >
                 Services
               </Link>
             </Menu.Item>
