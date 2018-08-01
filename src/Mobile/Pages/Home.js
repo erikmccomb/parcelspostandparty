@@ -12,7 +12,7 @@
   import pplogo from '../../Images/Logos/pplogo.png'
   import banner1 from '../../Images/Background/banner1.jpg';
 
-class Home extends React.Component {
+class Home extends React.Component { 
   render() {
     return(
       <Flexbox 
