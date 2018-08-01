@@ -2,6 +2,7 @@
   import React from 'react'
   import Flexbox from 'flexbox-react'
   import { Icon } from 'semantic-ui-react'
+  import { Image } from 'semantic-ui-react'
   import 'semantic-ui-css/semantic.min.css'
   import '../../../src/index.css'
 // Components
@@ -9,6 +10,7 @@
   import Schedule from '../Components/Schedule'
 // Images
   import store_1 from '../../Images/Background/store_1.jpg';
+  import banner1 from '../../Images/Background/banner1.jpg';
 
 class Home extends React.Component {
   render() {
@@ -21,6 +23,11 @@ class Home extends React.Component {
         justifyContent='center'
         style={styles.homeStyle}
       >
+        <Flexbox>
+          <div>
+            <Image src={banner1} style={{maxWidth:'600px'}}/>
+          </div>
+        </Flexbox>
         <Flexbox flexDirection='row' width='600px' maxWidth='100vw'>
           <Flexbox flexDirection='column' style={styles.cell}>
             <h3 style={{textAlign:'center'}}>

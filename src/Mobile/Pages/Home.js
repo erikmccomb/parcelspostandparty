@@ -10,6 +10,7 @@
 // Images
   import store_1 from '../../Images/Background/store_1.jpg'
   import pplogo from '../../Images/Logos/pplogo.png'
+  import banner1 from '../../Images/Background/banner1.jpg';
 
 class Home extends React.Component {
   render() {
@@ -32,6 +33,11 @@ class Home extends React.Component {
             justifyContent='center'
           >
             <Image src={pplogo} style={{height: '90px'}} />
+          </Flexbox>
+          <Flexbox style={{padding:'10px'}}>
+            <div>
+              <Image src={banner1} />
+            </div>
           </Flexbox>
           <Flexbox flexDirection='column' style={styles.cell}>
             <h3 style={{textAlign:'center'}}>
