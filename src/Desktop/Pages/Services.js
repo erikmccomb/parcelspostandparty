@@ -5,6 +5,7 @@ import cardboard from '../../Images/Background/cardboard2.jpg'
 import boxes from '../../Images/Background/boxes.jpg'
 import usps from '../../Images/Logos/usps.png'
 import fedex from '../../Images/Logos/fedex.png'
+import dhl from '../../Images/Logos/dhl.png'
 
 class Services extends React.Component {
   render() {
@@ -18,71 +19,89 @@ class Services extends React.Component {
             justifyContent='center'
             style={styles.usps} 
           >
-            <div>
-              <Image src={usps} size='medium'/>
-            </div>
-            <Flexbox flexDirection='row' >
-              <ul style={{listStyleType:'none'}}>
-                <li>
-                  Certified mail
-                </li>
-                <li>
-                  Return Receipt
-                </li>
-                <li>
-                  USPS Ground
-                </li>
-              </ul>
-              <ul style={{listStyleType:'none'}}>
-                <li>
-                  Priority Mail
-                </li>
-                <li>
-                  Express Mail
-                </li>
-                <li>
-                  Prepaid Labels
-                </li>
-              </ul>
-            </Flexbox>
-  
+            <Flexbox flexDirection='row' style={{paddingTop:'30px'}}>
 
-            <div>
-              <Image src={fedex} size='medium'/>
-            </div>
-            <Flexbox flexDirection='row'>
-              <ul style={{listStyleType:'none'}}>
-                <li>
-                  Ground
-                </li>
-                <li>
-                  Express
-                </li>
-                <li>
-                  International Economy
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  International Express
-                </li>
-                <li>
-                  Domestic/International Air Freight
-                </li>
-                <li>
-                  Prepaid FedEx Labels
-                </li>
-              </ul>
+              <Flexbox flexDirection='column' alignItems='center' style={{paddingRight:'100px'}}>
+                <div alignSelf='center'>
+                  <Image src={usps} style={{maxHeight:'79px'}}/>
+                </div>
+                <Flexbox flexDirection='row' alignSelf='center' style={{textAlign: 'center', paddingTop:'5px' }}>
+                  <Flexbox flexDirection='column' style={{paddingRight: '5px'}}> 
+                    <div>
+                      Certified mail
+                    </div>
+                    <div>
+                      Return Receipt
+                    </div>
+                    <div>
+                      USPS Ground
+                    </div>
+                  </Flexbox>
+                  <Flexbox flexDirection='column' style={{paddingLeft: '5px'}}> 
+                    <div>
+                      Priority Mail
+                    </div>
+                    <div>
+                      Express Mail
+                    </div>
+                    <div>
+                      Prepaid Labels
+                    </div>
+                  </Flexbox>
+                </Flexbox>
+              </Flexbox>
+    
+              <Flexbox flexDirection='column' alignItems='center'>
+                <div>
+                  <Image src={fedex} style={{maxHeight:'79px'}}/>
+                </div>
+                <Flexbox flexDirection='row' alignSelf='center' style={{textAlign: 'center', paddingTop:'5px' }}>
+                  <Flexbox flexDirection='column' style={{paddingRight: '5px'}}> 
+                    <div>
+                      Ground
+                    </div>
+                    <div>
+                      Express
+                    </div>
+                    <div>
+                      Intl. Economy
+                    </div>
+                  </Flexbox>
+                  <Flexbox flexDirection='column' style={{paddingLeft: '5px'}}> 
+                    <div>
+                      Intl. Express
+                    </div>
+                    <div>
+                     Air Freight
+                    </div>
+                    <div>
+                      Prepaid Labels
+                    </div>
+                  </Flexbox>
+                </Flexbox>
+              </Flexbox>
+            </Flexbox>
+      
+            <Flexbox flexDirection='column' alignItems='center' style={{paddingTop:'30px'}}>
+              <div>
+                <Image src={dhl} style={{maxHeight:'79px'}}/>
+              </div>
+              <Flexbox flexDirection='row' alignSelf='center' style={{textAlign: 'center' }}>
+                <Flexbox flexDirection='column' style={{padding: '5px'}}> 
+                  <div>
+                    Expert Fast Service to the World
+                  </div>
+                  <div>
+                    Parcels Air Freight
+                  </div>
+                  <div>
+                    Documents
+                  </div>
+                </Flexbox>
+              </Flexbox>
             </Flexbox>
           </Flexbox>
-    
-          <div style={styles.items}>
-            <h3>
-              DHL
-            </h3>
-            Expert Fast Service to the World.
-            Documents, Parcels Air Freight
-          </div>
+
           </Flexbox>
           <div style={styles.items}>
             <h3>

@@ -50,7 +50,7 @@ class DesktopMenuBar extends React.Component {
               tyle={{fontFamily: 'Baskerville', padding:'6px', fontSize: '15px',}}
             >
               <Link to='/' style={{color: 'black'}} >
-                <Image src={pplogonotag} style={{height: '25px'}} />
+                <Image src={pplogonotag} style={{height: '35px'}} />
               </Link>
             </Menu.Item>
 
