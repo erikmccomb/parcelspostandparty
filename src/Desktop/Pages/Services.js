@@ -181,6 +181,8 @@ class Services extends React.Component {
 const styles={
   items:{
     padding: '10px 0px 10px 0px',
+    maxWidth:'90vw', 
+    width:'100%'
   },
   usps:{
     backgroundImage: `url(${cardboard})`,
