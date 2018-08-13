@@ -10,7 +10,7 @@
 // Images
   import store_1 from '../../Images/Background/store_1.jpg'
   import pplogo from '../../Images/Logos/pplogo.png'
-  import banner1 from '../../Images/Background/banner1.jpg';
+  import banner1 from '../../Images/Background/banner1.png';
 
 class Home extends React.Component { 
   render() {
