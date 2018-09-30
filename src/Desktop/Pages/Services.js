@@ -3,6 +3,8 @@ import Flexbox from 'flexbox-react'
 import { Image } from 'semantic-ui-react'
 import cardboard from '../../Images/Background/cardboard2.jpg'
 import boxes from '../../Images/Background/boxes.jpg'
+import freight from '../../Images/Background/freight.jpg'
+import doc from '../../Images/Background/doc.jpg'
 import usps from '../../Images/Logos/usps.png'
 import fedex from '../../Images/Logos/fedex.png'
 import dhl from '../../Images/Logos/dhl.png'
@@ -10,17 +12,18 @@ import dhl from '../../Images/Logos/dhl.png'
 class Services extends React.Component {
   render() {
     return(
-      <Flexbox  flexDirection='column' justifyContent='center' width='100vw'>
+      <Flexbox  flexDirection='column' justifyContent='center' width='100vw' style={{fontSize:'15px', textShadow: '2px 2px #000000'}}>
         <Flexbox flexDirection='column' width='100vw'>
-          
           <Flexbox 
             flexDirection='column'
             alignItems='center'
             justifyContent='center'
             style={styles.usps} 
           >
+          <h1 style={{textAlign:'center'}}>
+            Carriers
+          </h1>
             <Flexbox flexDirection='row' style={{paddingTop:'30px'}}>
-
               <Flexbox flexDirection='column' alignItems='center' style={{paddingRight:'100px'}}>
                 <div alignSelf='center'>
                   <Image src={usps} style={{maxHeight:'79px'}}/>
@@ -103,45 +106,51 @@ class Services extends React.Component {
           </Flexbox>
 
           </Flexbox>
-          <div style={styles.items}>
-            <h3>
-              Motor Freight. 
-            </h3>
-            (LTL) Less Than Truckload.
-            Over 30 carriers Nation wide
+          <div style={styles.freight}>
+            <div style={{minHeight: '250px', padding: '20px 20px 20px 20px'}}>
+              <h1 style={{textAlign:'center'}}>
+                Motor Freight
+              </h1>
+              (LTL) Less-Than-Truckload with over 30 carriers Nation wide
+              <div>
+                Air Cargo capabilities available as well!
+              </div>
+              <div>
+                High Value “Never Stop” options for extremely high value urgent
+                shipments that may need special security to be transported quickly,
+                safely and securely.  
+              </div>
+            </div>
           </div>
 
-          <div style={styles.items}>
-            We have Air Cargo capabilities as well.
-            High Value “Never Stop” options for extremely high value urgent
-            shipments that may need special security to be transported quickly,
-            safely and securely.  
-          </div>
-
-          <div style={styles.items}>
-            Document Services –Copy, Fax, Scan and Print
-          </div>
+          <Flexbox style={styles.doc} flexDirection='column'>
+            <h1>
+              Document Services
+            </h1>
+            <Flexbox justifyContent='center' alignItems='center'>
+              Copy, Fax, Scan, and Print
+            </Flexbox>
+          </Flexbox>
     
           <div style={styles.mailbox}>
             <h3>
               Private Mail Boxes
             </h3>
-            <ul>
-              <li>
+              <div>
                 Magazine Street Address             
-              </li>
-              <li>
+              </div>
+              <div>
                 Package Receiving
-              </li>
-              <li>
+              </div>
+              <div>
                 REAL address - not a p.o. box
-              </li>
-              <li>
+              </div>
+              <div>
                 Mail forwarding “anywhere” in the world. 
-              </li>
-            </ul>
-
-            Stop the “Porch Pirates” - Have it delivered here 6 days a week. 
+              </div>
+              <div>    
+                Stop the “Porch Pirates” - Have it delivered here 6 days a week. 
+              </div>
           </div>
     
           <div style={styles.items}>
@@ -194,7 +203,25 @@ const styles={
     backgroundImage: `url(${boxes})`,
     backgroundSize: 'cover',
     padding: '10px 0px 10px 0px',
+    color:'white',
+    textAlign: 'center',
+    maxWidth:'100vw'
+  },
+  freight:{
+    backgroundImage: `url(${freight})`,
+    backgroundSize: 'cover',
+    padding: '10px 0px 10px 0px',
     color:'white'
+  },
+  doc:{
+    backgroundImage: `url(${doc})`,
+    backgroundSize: 'cover',
+    padding: '10px 0px 10px 0px',
+    color:'white',
+    minHeight: '200px', 
+    padding: '20px 20px 20px 20px',
+    textAlign: 'center',
+    maxWidth:'100vw'
   },
 }
 

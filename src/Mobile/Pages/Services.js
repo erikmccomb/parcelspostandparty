@@ -1,7 +1,9 @@
 import React from 'react'
 import Flexbox from 'flexbox-react'
 import cardboard from '../../Images/Background/cardboard2.jpg'
+import freight from '../../Images/Background/freight.jpg'
 import boxes from '../../Images/Background/boxes.jpg'
+import doc from '../../Images/Background/doc.jpg'
 import { Image } from 'semantic-ui-react'
 import usps from '../../Images/Logos/usps.png'
 import fedex from '../../Images/Logos/fedex.png'
@@ -10,7 +12,7 @@ import dhl from '../../Images/Logos/dhl.png'
 class Services extends React.Component {
   render() {
     return(
-      <Flexbox flexDirection='column' justifyContent='center' width='100vw' style={{marginBottom:'60px'}}>
+      <Flexbox flexDirection='column' justifyContent='center' width='100vw' style={{marginBottom:'60px', textShadow: '2px 2px #000000'}}>
 
         <Flexbox flexDirection='column' style={styles.cardboard} >
           <Flexbox style={styles.carrier}>
@@ -93,22 +95,33 @@ class Services extends React.Component {
 
        
   
-        <Flexbox flexDirection='column' style={styles.items}>
-          <h3>
-            Motor Freight. 
-          </h3>
-          (LTL) Less Than Truckload.
-          Over 30 carriers Nation wide
-        </Flexbox>
+       <div style={styles.freight}>
+            <div style={{minHeight: '250px', padding: '20px 20px 20px 20px'}}>
+              <h1 style={{textAlign:'center'}}>
+                Motor Freight
+              </h1>
+              (LTL) Less-Than-Truckload with over 30 carriers Nation wide
+              <div>
+                Air Cargo capabilities available as well!
+              </div>
+              <div>
+                High Value “Never Stop” options for extremely high value urgent
+                shipments that may need special security to be transported quickly,
+                safely and securely.  
+              </div>
+            </div>
+          </div>
 
-        <Flexbox flexDirection='column' style={styles.items}>
-          We have Air Cargo capabilities as well.
-          High Value “Never Stop” options for extremely high value urgent
-          shipments that may need special security to be transported quickly,
-          safely and securely.  
-        </Flexbox>
+          <Flexbox style={styles.doc} flexDirection='column'>
+            <h1>
+              Document Services
+            </h1>
+            <Flexbox justifyContent='center' alignItems='center'>
+              Copy, Fax, Scan, and Print
+            </Flexbox>
+          </Flexbox>
 
-         <Flexbox flexDirection='column' style={styles.mailbox}>
+          <Flexbox flexDirection='column' style={styles.mailbox}>
             <Flexbox flexDirection='column' style={{maxWidth:'90vw', width:'100%'}}>
               <h3>
                 Private Mail Boxes
@@ -130,10 +143,6 @@ class Services extends React.Component {
               Stop the “Porch Pirates” - Have it delivered here 6 days a week. 
             </Flexbox>
           </Flexbox>
-
-        <Flexbox flexDirection='column' style={styles.items}>
-          Document Services –Copy, Fax, Scan and Print
-        </Flexbox>
 
         <Flexbox flexDirection='column' style={styles.items}>
           <h3>
@@ -187,16 +196,29 @@ const styles={
     backgroundSize: 'cover',
     padding: '10px 0px 10px 0px',
     color:'white',
-    flexDirection: 'column',
-    alignItems: 'center',
-    width:'100vw'
+  },
+  freight:{
+    backgroundImage: `url(${freight})`,
+    backgroundSize: 'cover',
+    padding: '10px 0px 10px 0px',
+    color:'white',
   },
   carrier:{
     flexDirection: 'column',
     alignItems: 'center',
     paddingTop: '15px',
     paddingBottom:'15px',
-  }
+  },
+  doc:{
+    backgroundImage: `url(${doc})`,
+    backgroundSize: 'cover',
+    padding: '10px 0px 10px 0px',
+    color:'white',
+    minHeight: '200px', 
+    padding: '20px 20px 20px 20px',
+    textAlign: 'center',
+    maxWidth:'100vw'
+  },
 }
 
 export default Services

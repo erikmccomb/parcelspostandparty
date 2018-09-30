@@ -1,6 +1,6 @@
 import React from 'react'
 import Flexbox from 'flexbox-react'
-import { Card } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react' 
 // Partner Logos
   import AdamHall from '../../Images/Partners/AdamHall.png'
   import AlexBeard from '../../Images/Partners/AlexBeard.png'
@@ -9,12 +9,19 @@ import { Card } from 'semantic-ui-react'
   import DirtyCoast from '../../Images/Partners/DirtyCoast.png'
   import EllenMacomber from '../../Images/Partners/Ellen_Macomber_logo.png'
   import Graphite from '../../Images/Partners/GraphiteGalleries.png'
-  import Heirloom from '../../Images/Partners/Heirloom.jpg'
   import JamieHayes from '../../Images/Partners/jamiehayes.png'
-  import Octavia from '../../Images/Partners/octavia.png'
-  import VillaVici from '../../Images/Partners/Villa-Vici-Logo.png'
   import Wirthmore from '../../Images/Partners/Wirthmore.png'
-
+  import billy from '../../Images/Partners/billy.png'
+  import frank from '../../Images/Partners/frank.png'
+  import hat from '../../Images/Partners/hat.png'
+  import jcb from '../../Images/Partners/jcb.png'
+  import longshore from '../../Images/Partners/longshore.png'
+  import luca from '../../Images/Partners/luca.png'
+  import martine from '../../Images/Partners/martine.png'
+  import noma from '../../Images/Partners/noma.png'
+  import uptown from '../../Images/Partners/uptown.png'
+  import two from '../../Images/Partners/two.png'
+  
 class Partners extends React.Component {
   render() {
     return(
@@ -28,7 +35,7 @@ class Partners extends React.Component {
           <Flexbox flexDirection='column' width='700px' maxWidth='90vw' padding='20px 0px 20px 0px' style={{textAlign:'justify'}}>
             <p>
             Let Parcels and Post help your store deliver excellent customer service 
-            by shipping your client’s purchase home, wherever home may be. Several 
+            by shipping your client’s purchase home. Several 
             times a week we roll in the Parcels and Post van to pickup at business 
             like yours up and down Magazine Street, Julia/Warehouse District and the 
             French Quarter.
@@ -62,6 +69,24 @@ class Partners extends React.Component {
                 description='http://www.antieaugallery.com/'
               />
               <Card style={{backgroundColor: '#09A7E7'}}
+                image={longshore}
+                header='Ashley Longshore Gallery'
+                meta='Gallery'
+                description='https://www.ashleylongshore.com/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
+                image={billy}
+                header='Billy Soliratio Fine Art'
+                meta='Artist'
+                description='https://www.ashleylongshore.com/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
+                image={hat}
+                header='Colby Hebert the Cajun Hatter'
+                meta='Clothing'
+                description='https://www.colbyhebert.com/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
                 image={CrescentCity}
                 header='Crescent City Auction Gallery'
                 meta='Auction House'
@@ -80,16 +105,22 @@ class Partners extends React.Component {
                 description='https://ellenmacomber.com/'
               />
               <Card style={{backgroundColor: '#09A7E7'}}
+                image={frank}
+                header='Frank Relle Photography'
+                meta='Artist'
+                description='www.frankrelle.com/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
+                image={two}
+                header='Gallery Two'
+                meta='Gallery'
+                description='https://gallerytwonola.com/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
                 image={Graphite}
                 header='Graphite Galleries'
                 meta='Art Gellery'
                 description='http://www.graphitenola.com/'
-              />
-              <Card style={{backgroundColor: '#09A7E7'}}
-                image={Heirloom}
-                header='Heirloom'
-                meta='Furnishings & Consignment'
-                description='http://www.heirloomfurnishings.com/'
               />
               <Card style={{backgroundColor: '#09A7E7'}}
                 image={JamieHayes}
@@ -98,22 +129,46 @@ class Partners extends React.Component {
                 description='https://jamiehayes.com/'
               />
               <Card style={{backgroundColor: '#09A7E7'}}
-                image={Octavia}
-                header='Octavia'
-                meta='Art Gallery'
-                description='http://www.octaviaartgallery.com/'
+                image={jcb}
+                header='JCB Creations'
+                meta='Bakery'
+                description='https://www.jcbcreations.com/'
               />
               <Card style={{backgroundColor: '#09A7E7'}}
-                image={VillaVici}
-                header='Villa Vici'
-                meta='Furniture'
-                description='https://villavici-furniture.com/'
+                image={luca}
+                header='Luca Falcone Custom Clothier'
+                meta='Clothing'
+                description='https://www.lfsuits.com/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
+                image={martine}
+                header='Martine Chaisson Gallery'
+                meta='Gallery'
+                description='https://www.martinechaissongallery.com/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
+                image={noma}
+                header='NOMA'
+                meta='Museum & Gallery'
+                description='https://www.noma.org/shop/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
+                image={JamieHayes}
+                header='Susan Bergman Ceramics'
+                meta='Artist'
+                description='https://www.sebergman.com/'
+              />
+              <Card style={{backgroundColor: '#09A7E7'}}
+                image={uptown}
+                header='Uptown Frames'
+                meta='Framing'
+                description='https://www.uptownframes.com/'
               />
               <Card style={{backgroundColor: '#09A7E7'}}
                 image={Wirthmore}
                 header='Wirthmore Antiques'
                 meta='Antiques'
-                description='https://wirthmoreantiques.com/'
+                description='https://www.wirthmoreantiques.com/'
               />
               
             </Card.Group>
@@ -128,13 +183,10 @@ class Partners extends React.Component {
               Call P&P for a shipping quote for your item.
             </li>
             <li>
-              Once your business or your customer OK’s the quote we’ll put you on the list for pickup.
+              Once your business or your customer OK’s the quote we’ll put you on the list for complimentary pickup.
             </li>
             <li>
               We can bill your store or work directly with your client or designer to arrange payment and work out the shipping arrangements.
-            </li>
-            <li>
-              Pickup is always free.
             </li>
             <li>
               We bring the item back to Parcels and Post and tenderly package it for transportation, the carriers pick up at our store.
@@ -142,15 +194,18 @@ class Partners extends React.Component {
             <li>
               We provide full visibility to you and your customer by delivering an email with the carrier used, the date of expected delivery, the tracking number, and the credit card slip.
             </li>
-            <li>
-              When you work with P&P there are no hassles if the item is damaged or lost in transit by the carrier. We guarantee our services which means you or your customer gets compensated. No more tussles with UPS or FedEx,we do it for you.
-            </li>
           </ul>
 
           Here’s what we most frequently pick up and ship:
           <ul>
             <li>
-              Artwork Sculptures 
+              Artwork
+            </li>
+            <li>
+              Photographs
+            </li>
+            <li>
+              Sculptures
             </li>
             <li>
               Furniture 
@@ -177,10 +232,7 @@ class Partners extends React.Component {
               Office Equipment 
             </li>
             <li>
-              Signs 
-            </li>
-            <li>
-              Textiles
+              Family Heirlooms
             </li>
           </ul>
           </Flexbox>
