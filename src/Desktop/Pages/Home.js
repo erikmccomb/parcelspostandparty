@@ -50,8 +50,7 @@ render() {
               margin:'auto',
               marginTop:'75px',
               textAlign:'center',
-          }}>
-          </div>
+          }}/>
         
         <Flexbox 
           flexDirection='column' 
@@ -62,9 +61,11 @@ render() {
           maxWidth='40vw'
         >
           <Flexbox>
-            <h1>
-              From Stamp To Crate - We Love Your Package!
-            </h1>
+            <div style={{color:'white', paddingBottom:'20px'}}>
+              <h1>
+                From Stamp To Crate - We Love Your Package!
+              </h1>
+            </div>
           </Flexbox>
           <Flexbox flexDirection='row' width='600px' maxWidth='40vw'>
             <Flexbox flexDirection='column' style={styles.cell}>
