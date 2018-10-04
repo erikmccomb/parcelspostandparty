@@ -31,16 +31,13 @@ class Home extends React.Component {
         <Flexbox flexDirection='row' width='600px' maxWidth='100vw'>
           <Flexbox flexDirection='column' style={styles.cell}>
             <h3 style={{textAlign:'center'}}>
-            From Stamp To Crate - We Love Your Package!
+            From a Stamp To a Crate - We Love Your Package!
             </h3>
 
-            <p>Parcels and Post is your local go-to shipping related 
-            service provider. We are located Uptown on Magazine St. 
-            in New Orleans, LA.</p>
+            <p>Parcels and Post is your Uptown neighborhood go-to for all things shipping related.
+            We are conveniently nestled between Jefferson and Napoleon on the river side of Magazine Street.</p>
 
-            <p>We provide the very best customer experience by making 
-            it easy to get your items packed to their destination on 
-            time and have them arrive in perfect condition.</p>
+            <p>We provide the very best customer experience by making it easy to get your items properly packed and to their destination on time and in perfect condition.</p>
 
             <p>Doing business with Parcels and Post is easy. We are 
             proud to be an integral part of the community serving our 
