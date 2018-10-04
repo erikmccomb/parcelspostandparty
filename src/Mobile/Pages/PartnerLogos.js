@@ -26,9 +26,9 @@ import { Card } from 'semantic-ui-react'
 class PartnerLogos extends React.Component {
   render() {
     return(
-      <Flexbox style={{width: '100vw', color:'white'}} alignItems='center' >
+      <Flexbox style={{width: '100vw', color:'white', textAlign:'center'}} alignItems='center' >
         <Card.Group centered >
-          <Card style={{backgroundColor: '#09A7E7', color:'red'}}
+          <Card style={{backgroundColor: '#09A7E7', color:'red', textAlign:'center'}}
             image={AdamHall}
             header='Adam Hall'
             meta='Artist'
