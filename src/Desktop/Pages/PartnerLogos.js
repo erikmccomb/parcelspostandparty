@@ -31,37 +31,37 @@ class PartnerLogos extends React.Component {
           <Card style={{backgroundColor: '#09A7E7', color:'red'}}
             image={AdamHall}
             header='Adam Hall'
-            meta='Artist'
-            description='www.adamhallart.com/'
+            meta='Fine Art'
+            description='www.adamkhall.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
             image={AlexBeard}
             header='Alex Beard'
-            meta='Artist'
+            meta='Abstract Naturalism'
             description='www.alexbeardstudio.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
             image={Antieau}
             header='Antieau Gallery'
-            meta='Artist'
+            meta='Fabric Paintings'
             description='www.antieaugallery.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
             image={longshore}
             header='Ashley Longshore Gallery'
-            meta='Gallery'
+            meta='Pop-Artist'
             description='www.ashleylongshore.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
             image={billy}
-            header='Billy Soliratio Fine Art'
+            header='Billy Solitario Fine Art'
             meta='Artist'
-            description='www.ashleylongshore.com/'
+            description='www.billysolitario.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
             image={hat}
             header='Colby Hebert the Cajun Hatter'
-            meta='Clothing'
+            meta='Custom Made Hats'
             description='www.colbyhebert.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
@@ -73,7 +73,7 @@ class PartnerLogos extends React.Component {
           <Card style={{backgroundColor: '#09A7E7'}}
             image={DirtyCoast}
             header='Dirty Coast'
-            meta='Clothing & Souvenirs'
+            meta='Local Clothing & Souvenirs'
             description='www.dirtycoast.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
@@ -85,13 +85,13 @@ class PartnerLogos extends React.Component {
           <Card style={{backgroundColor: '#09A7E7'}}
             image={frank}
             header='Frank Relle Photography'
-            meta='Artist'
+            meta='Fine Photography'
             description='www.frankrelle.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
             image={two}
             header='Gallery Two'
-            meta='Gallery'
+            meta='Mischevious Sculpture and Jewelry'
             description='www.gallerytwonola.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}
@@ -109,7 +109,7 @@ class PartnerLogos extends React.Component {
           <Card style={{backgroundColor: '#09A7E7'}}
             image={jcb}
             header='JCB Creations'
-            meta='Bakery'
+            meta='Custom Cakes and Cookies'
             description='www.jcbcreations.com/'
           />
           <Card style={{backgroundColor: '#09A7E7'}}

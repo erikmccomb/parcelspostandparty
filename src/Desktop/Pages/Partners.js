@@ -17,10 +17,9 @@ class Partners extends React.Component {
           <Flexbox flexDirection='column' width='700px' maxWidth='60vw' padding='20px 0px 20px 0px' style={{textAlign:'justify'}}>
             <p>
             Let Parcels and Post help your store deliver excellent customer service 
-            by shipping your client’s purchase home. Several 
-            times a week we roll in the Parcels and Post van to pickup at business 
-            like yours up and down Magazine Street, Julia/Warehouse District and the 
-            French Quarter.
+            by shipping your client’s purchase. We provide complimentary pickup 
+            service for stores and galleries up and down Magazine Street, Julia/Warehouse 
+            District and the French Quarter.  
             </p>
           </Flexbox>
 
