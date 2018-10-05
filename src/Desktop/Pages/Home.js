@@ -61,7 +61,7 @@ render() {
           maxWidth='40vw'
         >
           <Flexbox>
-            <div style={{color:'white', paddingBottom:'20px'}}>
+            <div style={{color:'white', paddingBottom:'20px', textAlign:'center'}}>
               <h2>
                 From a Stamp To a Crate - We Love Your Package!
               </h2>
