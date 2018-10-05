@@ -62,9 +62,9 @@ render() {
         >
           <Flexbox>
             <div style={{color:'white', paddingBottom:'20px'}}>
-              <h1>
+              <h2>
                 From a Stamp To a Crate - We Love Your Package!
-              </h1>
+              </h2>
             </div>
           </Flexbox>
           <Flexbox flexDirection='row' width='600px' maxWidth='40vw'>
